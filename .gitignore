@@ -1,0 +1,18 @@
+# Ignore generated files and directories
+.DS_Store
+/build
+/coverage
+/data
+
+# Ignore backend-specific files and directories
+/backend/node_modules
+/backend/coverage
+/backend/data
+
+# Ignore frontend-specific files and directories
+/frontend/node_modules
+/frontend/coverage
+/frontend/data
+
+# Ignore root-level node_modules directory
+/node_modules

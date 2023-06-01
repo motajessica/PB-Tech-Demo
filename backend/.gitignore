@@ -1,0 +1,9 @@
+/node_modules
+/coverage
+.DS_Store
+node_modules/.DS_Store
+**/.DS_Store
+.env
+/build
+/coverage
+/data
