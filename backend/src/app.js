@@ -8,7 +8,6 @@ dotenv.config();
 const app = express();
 
 app.get('/', async (req, res) => {
-  return res.json({message: "hello"})
   try {
     const item = await Item.findOne({ message: 'Hello World' });
 
