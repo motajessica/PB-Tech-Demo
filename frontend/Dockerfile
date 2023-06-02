@@ -13,11 +13,11 @@ RUN npm install
 # Copy the source code of the application into the container
 COPY . .
 
-# Build the frontend app
-RUN npm run build
+# # Build the frontend app
+# RUN npm run build
 
 # Expose the network port on which your frontend app listens
-EXPOSE 80
+EXPOSE 3000
 
 # Specify the command to run within the container
 CMD ["npm", "start"]
