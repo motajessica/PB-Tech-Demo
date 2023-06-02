@@ -4,15 +4,12 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    
-    fetch('http://backend:3000/api/data')
+    fetch('http://localhost:9000/')
       .then(response => response.json())
       .then(data => {
-        
         console.log(data);
       })
       .catch(error => {
-        
         console.error(error);
       });
   }, []);
