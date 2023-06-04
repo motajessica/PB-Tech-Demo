@@ -9,7 +9,7 @@ import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 function Header() {   
   return (
 
-  <Navbar className="px-4 py-3 nav-bar-bg" expand="lg">
+  <Navbar className="px-4 py-3 nav-bar-bg nav-bar_links" expand="lg">
       <Navbar.Brand className="fw-bolder" href="/">
         <img className="nav-logo" src="https://www.pbtech.co.nz/imglib/dd/pb-logo-alt.svg" alt="..." />
       </Navbar.Brand>
@@ -30,7 +30,7 @@ function Header() {
         <Nav className="ms-auto">
           <Form className="d-flex align-items-center">
             <FormControl type="text" placeholder="Search" className="mr-sm-2 me-2" />
-            <Button variant="outline-light" className="me-2 nav-bar-btn-search">
+            <Button className="me-2 nav-bar-btn-search">
               <FontAwesomeIcon icon={faSearch} className="text-white" />
             </Button>
           </Form>
