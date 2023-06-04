@@ -14,12 +14,12 @@ function Footer() {
     <div className="footer">
       <div class="my-5 mb-0">
         <footer class="text-white text-center text-lg-start bg-dark">
-          <div class="container p-4">
+          <div class="p-4">
             <div class="row mt-4">
             {/* //part 1 */}
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
               <h6 class="text-uppercase mb-4">Shop by DEPARTAMENT</h6>
-                  <ul class="arrow-list">
+                  <ul class="">
                     <li class="mb-3">               
                       <span class="ms-2">Computer & Tablets</span>
                     </li>
@@ -54,8 +54,7 @@ function Footer() {
                   </ul>
               </div> 
 
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h6 class="mb-4"></h6>
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0 mt-5">
                   <ul>
                   <li class="mb-3">
                       <span class="ms-2">PC Peripherals & Acessories</span>
@@ -88,7 +87,7 @@ function Footer() {
               </div> 
 
 
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
                 <h6 class="text-uppercase mb-4">Company info</h6>
                 
                   <ul class="fa-ul">
@@ -147,7 +146,7 @@ function Footer() {
                   </ul>
               </div>
 
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
               <h6 class="text-uppercase mb-4">Services & Support</h6>
                   <ul class="fa-ul">
                     <li class="mb-3">
@@ -191,7 +190,7 @@ function Footer() {
               </div> 
 
 
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
               <h6 class="text-uppercase mb-4">Promotions & Offers</h6>
                   <ul class="fa-ul">
                     <li class="mb-3">
@@ -233,31 +232,10 @@ function Footer() {
                   </ul>
               </div> 
 
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4 pb-1">Contact Us</h5>
-
-                <ul class="fa-ul">
-                  <li class="mb-3">
-                    
-                    <span class="ms-2">Address: Lorem, 00-00, Ipsum</span>
-                  </li>
-                  <li class="mb-3">
-                    
-                    <span class="ms-2">Email: lorem@ipsum.com</span>
-                  </li>
-                  <li class="mb-3">
-                    
-                    <span class="ms-2">Phone: + 11 111 111 11</span>
-                  </li>
-                </ul>
-              </div>
-
-
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
             
-              <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase mb-4">Opening hours</h5>
-
-                <table class="table text-center text-white">
+                 <table class="table text-center text-white">
                   <tbody class="fw-normal">
                     <tr>
                       <td>Mon - Fri:</td>
@@ -273,16 +251,29 @@ function Footer() {
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              
+        
+            <h5 class="text-uppercase mb-4 pb-1">Contact Us</h5>
+              <ul class="fa-ul">
+                <li class="mb-3">
+                  <span class="ms-2">Address: Lorem, 00-00, Ipsum</span>
+                </li>
+                <li class="mb-3"> 
+                  <span class="ms-2">Email: lorem@ipsum.com</span>
+                </li>
+                <li class="mb-3">
+                  <span class="ms-2">Phone: + 11 111 111 11</span>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="text-center p-3 border-top">
+          <div class="text-center pt-4 border-top">
             © {year} Copyright:
             <a class="text-white " href="https://mdbootstrap.com/">
               {" "}
             </a>
-            <div class="mt-4">
+            <div class="">
                   {/* <a type="button" class="btn btn-floating btn-light btn-md me-1">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
@@ -298,9 +289,9 @@ function Footer() {
                   <a type="button" class="btn btn-floating btn-light btn-md">
                     <FontAwesomeIcon icon={faTelegram} />
                   </a> */}
-                </div>
+              </div>
           </div>
-
+        </div>
 
         </footer>
       </div>
