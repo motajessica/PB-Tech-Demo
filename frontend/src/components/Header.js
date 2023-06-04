@@ -1,65 +1,48 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
+
 
 function Header() {   
   return (
-    <Navbar  expand="lg" className="bg-light px-4 py-3">
-      <Navbar.Brand className="fw-bolder" href="/">
-      <img className="nav-logo" src="/images/logo.png" alt='...'/>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="nav" />
-      <Navbar.Collapse id="nav">
-        <Nav className="ms-auto ms-auto mb-2 mb-lg-0">
-            <NavDropdown className="me-5" title="How to buy" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">How to buy</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown className="me-5" title="Sell your car" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown className="me-5" title="Finance & Insurance" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown className="me-5" title="Turners subscription" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          <Nav.Link className="fw-bold btn btn-outline-primary btn-sm me-1" href="/login">Login</Nav.Link>
-          <Nav.Link className="fw-bold btn btn-primary btn-sm text-white " href="/login">Register</Nav.Link>
+    <Navbar  className="px-4 py-3 nav-bar-bg">
+    <Navbar.Brand className="fw-bolder" href="/">
+      <img className="nav-logo" src="https://www.pbtech.co.nz/imglib/dd/pb-logo-alt.svg" alt="..." />
+    </Navbar.Brand>
+
+    <Nav className="ms-auto">
+
+      
+    <Form inline>
+      <div className=''>
+        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+        <Button variant="outline-light">Search</Button>
+      </div>
+        </Form>
+
+        <Link to="/page0">Page 0</Link>
+        <Link to="/page1">Page 1</Link>
+        <Link to="/page2">Page 2</Link>
+
+      <Navbar.Collapse id="navbarNav">
+        <Nav className="mr-auto">
+          <Nav.Link as={Link} to="/products">Products</Nav.Link>
+          <Nav.Link as={Link} to="/services">Services</Nav.Link>
+          <Nav.Link as={Link} to="/deals">Deals</Nav.Link>
+          <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-    </Navbar>
+      <Nav.Link className="fw-bold btn btn-outline-primary btn-sm me-1" href="/login">
+        Login
+      </Nav.Link>
+      <Nav.Link className="fw-bold btn btn-primary btn-sm text-white" href="/register">
+        Register
+      </Nav.Link>
+      
+    </Nav>
+  </Navbar>
+  
   ) 
 }
  
