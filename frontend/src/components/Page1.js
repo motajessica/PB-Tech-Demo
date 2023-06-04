@@ -5,11 +5,13 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function Page1() {
   return (
-    <div className="container">
+    <div className="container pt-4">
+
+{/* First card */}
       <div className="row">
         <div className="col-md-4">
-          <Card>
-            <Card.Img variant="top" src="path_to_image1.jpg" alt="Card image 1" />
+          <Card className="">
+            <Card.Img src="path_to_image1.jpg" alt="Card image 1" />
           </Card>
         </div>
         <div className="col-md-8">
@@ -26,24 +28,20 @@ function Page1() {
                         <td> Memory size: 16GB</td>
                       </tr>
                       <tr>
-                        <td>Row 2, Column 1</td>
-                        <td>Row 2, Column 2</td>
+                        <td>Screen Size: 15.6 inches</td>
+                        <td>Screen Rsoltion: 1920x1080 </td>
                       </tr>
                       <tr>
-                        <td>Row 3, Column 1</td>
-                        <td>Row 3, Column 2</td>
+                        <td>SSD Capacity: 512 GB 3</td>
+                        <td>HDD Capacity: N/A</td>
                       </tr>
                       <tr>
-                        <td>Row 4, Column 1</td>
-                        <td>Row 4, Column 2</td>
+                        <td>GPU Model: Integrated Graphics</td>
+                        <td>Operating System: Windows 10 Pro</td>
                       </tr>
                       <tr>
-                        <td>Row 5, Column 1</td>
-                        <td>Row 5, Column 2</td>
-                      </tr>
-                      <tr>
-                        <td>Row 6, Column 1</td>
-                        <td>Row 6, Column 2</td>
+                       <td>More Details</td> 
+                       <td></td> 
                       </tr>
                     </tbody>
                   </table>
@@ -51,7 +49,7 @@ function Page1() {
               </div>
               <div className="col-md-4 d-flex align-items-center justify-content-center">
                 <div className="text-center">
-                  <h6 className="text-muted">$9.99</h6>
+                  <h6 className="text-muted">$1,725.00</h6>
                   <Button variant="warning" className="mt-2">
                     <FontAwesomeIcon icon={faShoppingCart} className="me-1" />
                     Add to Cart
@@ -63,10 +61,11 @@ function Page1() {
         </div>
       </div>
 
+{/* Second card */}
       <div className="row mt-4">
         <div className="col-md-4">
           <Card>
-            <Card.Img variant="top" src="path_to_image2.jpg" alt="Card image 2" />
+            <Card.Img  src="path_to_image2.jpg" alt="Card image 2" />
           </Card>
         </div>
         <div className="col-md-8">
@@ -74,33 +73,28 @@ function Page1() {
             <div className="row g-0">
               <div className="col-md-8">
                 <Card.Body>
-                  <h5 className="card-title">Title 2</h5>
-                  <p className="card-text">Small sentence</p>
+                  <h5 className="card-title">Laptop 2</h5>
                   <table className="table table-striped">
                     <tbody>
                       <tr>
-                        <td>Row 1, Column 1</td>
-                        <td>Row 1, Column 2</td>
+                        <td>CPU family: Intel Core i7</td>
+                        <td> Memory size: 16GB</td>
                       </tr>
                       <tr>
-                        <td>Row 2, Column 1</td>
-                        <td>Row 2, Column 2</td>
+                        <td>Screen Size: 15.6 inches</td>
+                        <td>Screen Rsoltion: 1920x1080 </td>
                       </tr>
                       <tr>
-                        <td>Row 3, Column 1</td>
-                        <td>Row 3, Column 2</td>
+                        <td>SSD Capacity: 512 GB 3</td>
+                        <td>HDD Capacity: N/A</td>
                       </tr>
                       <tr>
-                        <td>Row 4, Column 1</td>
-                        <td>Row 4, Column 2</td>
+                        <td>GPU Model: Integrated Graphics</td>
+                        <td>Operating System: Windows 10 Pro</td>
                       </tr>
                       <tr>
-                        <td>Row 5, Column 1</td>
-                        <td>Row 5, Column 2</td>
-                      </tr>
-                      <tr>
-                        <td>Row 6, Column 1</td>
-                        <td>Row 6, Column 2</td>
+                       <td>More Details</td> 
+                       <td></td> 
                       </tr>
                     </tbody>
                   </table>
@@ -108,7 +102,7 @@ function Page1() {
               </div>
               <div className="col-md-4 d-flex align-items-center justify-content-center">
                 <div className="text-center">
-                  <h6 className="text-muted">$14.99</h6>
+                  <h6 className="text-muted">$1,476.37</h6>
                   <Button variant="warning" className="mt-2">
                     <FontAwesomeIcon icon={faShoppingCart} className="me-1" />
                     Add to Cart
@@ -119,8 +113,12 @@ function Page1() {
           </Card>
         </div>
       </div>
+
+
     </div>
   );
 }
 
 export default Page1;
+
+
