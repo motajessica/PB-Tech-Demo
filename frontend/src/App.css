@@ -24,3 +24,16 @@
 .footer {
   background-color: #464b4e;;
 }
+
+.dropdown-toggle {
+  color: white;
+}
+
+.dropdown-toggle:hover {
+  background-color: #2c6182a3;
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
