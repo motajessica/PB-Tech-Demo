@@ -16,37 +16,37 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <div className="footer">
-      <div class="my-5 mb-0">
-        <footer class="text-white text-center text-lg-start bg-dark">
+      <div className="my-5 mb-0">
+        <footer className="text-white text-center text-lg-start bg-dark">
           <div class="p-4">
             <div class="row mt-4">
               {/* //part 1 */}
-              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h6 class="text-uppercase mb-4">Shop by DEPARTAMENT</h6>
-                <ul class="">
+              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h6 className="text-uppercase mb-4">Shop by DEPARTAMENT</h6>
+                <ul className="">
 
-                  <li class="mb-3">
+                  <li className="mb-3">
                     <FontAwesomeIcon icon={faLaptop} />
                     <i className="fas fa-laptop"></i>
-                    <span class="ms-2">Computer & Tablets</span>
+                    <span className="ms-2">Computer & Tablets</span>
                   </li>
 
-                  <li class="mb-3">
+                  <li className="mb-3">
                    <FontAwesomeIcon icon={faMicrochip} />
                     <i className="fas fa-microchip"></i>
-                    <span class="ms-2">PC Parts</span>
+                    <span className="ms-2">PC Parts</span>
                   </li>
                   
-                  <li class="mb-3">
+                  <li className="mb-3">
                     <FontAwesomeIcon icon={faPrint} />
                     <i className="fas fa-print"></i>
-                    <span class="ms-2">Printing & Office</span>
+                    <span className="ms-2">Printing & Office</span>
                   </li>
 
-                  <li class="mb-3">
+                  <li className="mb-3">
                     <FontAwesomeIcon icon={faTv} />
                     <i className="fas fa-tv"></i>
-                    <span class="ms-2">TV & AV</span>
+                    <span className="ms-2">TV & AV</span>
                   </li>
 
                   <li class="mb-3">

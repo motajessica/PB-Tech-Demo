@@ -1,21 +1,25 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const router = require('./routes/index');
-const Item = require('./models/item');
+const Laptop = require('./models/laptop');
+const cors = require('cors');
+
 
 dotenv.config();
 
 const app = express();
+app.use(cors());
 
-app.get('/', async (req, res) => {
+app.get('/laptops', async (req, res) => {
+  const params = {} // req.query
   try {
-    const item = await Item.findOne({ message: 'Hello World' });
+    const laptops = await Laptop.find(params);
 
-    if (!item) {
-      return res.status(404).json({ message: 'Item not found' });
+    if (!laptops) {
+      return res.status(404).json({ message: 'laptop not found' });
     }
 
-    res.json(item);
+    res.json(laptops);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server Error' });
@@ -33,16 +37,7 @@ router.get('/api/items', async (req, res) => {
 });
 
 app.get('/add', async (req, res) => {
-  try {
-    const message = 'Hello World';
-    const newItem = new Item({ message });
-    const savedItem = await newItem.save();
-
-    res.send('Saved item');
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Server Error' });
-  }
+  
 });
 
 module.exports = app;

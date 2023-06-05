@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 mongoose
-.connect(`mongodb://mongo:27017/mongo`, { useNewUrlParser: true })
+.connect(`mongodb://localhost:27017/mongo`, { useNewUrlParser: true })
 .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 

@@ -13,6 +13,12 @@ If you want to use as database the `mongo` container that was created with `dock
 
 Run `docker run -p 27017:27017 mongo`. It should get your mongo db container up and running in the port that the backend app will find.
 
+### Populate local database with seeds
+Once your database server is running you can populate it with some laptop records by running a script from the backend folder. 
+`npm run seeds` 
+
+What it does is to execute the script in the `backend/src/db/seeds.js` file.
+
 ### Start the backend
 
 Next you need to get the backend NodeJS app (backend) and the React app (frontend) running. 
