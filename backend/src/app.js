@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
       return res.status(404).json({ message: 'Item not found' });
     }
 
-    res.json(item);
+    res.json({message: item.message});
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server Error' });
