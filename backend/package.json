@@ -4,8 +4,8 @@
   "description": "app",
   "main": "src/server.js",
   "scripts": {
-    "start": "NODE_ENV=production nodemon server.js",
-    "dev": "NODE_ENV=development nodemon src/server.js",
+    "start": "nodemon server.js",
+    "dev": "nodemon src/server.js",
     "test": "jest --detectOpenHandles"
   },
   "license": "ISC",
