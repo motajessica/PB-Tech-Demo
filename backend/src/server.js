@@ -4,11 +4,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 dotenv.config();
-console.log(`Running application in ${process.env.NODE_ENV} environment`)
-const mongoServer = process.env.NODE_ENV === 'development' ? 'localhost' : 'mongo'
 
 mongoose
-  .connect(`mongodb://${mongoServer}:27017/mongo`, { useNewUrlParser: true })
+  .connect(`mongodb://mongo:27017/mongo`, { useNewUrlParser: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
