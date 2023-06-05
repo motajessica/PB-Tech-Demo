@@ -8,7 +8,6 @@ dotenv.config();
 const app = express();
 
 app.get('/', async (req, res) => {
-  return res.json({message: "hello"})
   try {
     const item = await Item.findOne({ message: 'Hello World' });
 
@@ -17,16 +16,6 @@ app.get('/', async (req, res) => {
     }
 
     res.json(item);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Server Error' });
-  }
-});
-
-router.get('/api/items', async (req, res) => {
-  try {
-    const items = await Item.find();
-    res.json(items);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server Error' });
