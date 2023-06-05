@@ -30,10 +30,13 @@
 }
 
 .dropdown-toggle:hover {
-  background-color: #2c6182a3;
   color: white;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  background-color:#0f3044a3 ;
+}
+
+.search-bar {
+  width: 500px; 
 }

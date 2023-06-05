@@ -10,7 +10,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faUser, faHeart, faCartShopping, faStore } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
@@ -28,7 +28,8 @@ function Header() {
           <FormControl
             type="text"
             placeholder="Search"
-            className="mr-sm-2 me-2"
+            className="mr-sm-2 me-2 ms-5 search-bar"
+            
           />
           <Button className="me-2 nav-bar-btn-search">
             <FontAwesomeIcon icon={faSearch} className="text-white" />
@@ -37,20 +38,37 @@ function Header() {
       </div>    
       <div className="d-flex">
       <Nav.Link
-          className="fw-bold me-1 text-white"
+          className="fw-bold me-1 text-white me-5"
           href="#"
         >
           <FontAwesomeIcon icon={faUser} className="me-1" />
           Sign In or Create Account
         </Nav.Link>
+
+        <Nav.Link
+          className="fw-bold me-1 text-white me-5"
+          href="#"
+        >
+          <FontAwesomeIcon icon={faHeart} className="me-1" />
+          Wish list
+        </Nav.Link>
+
+        <Nav.Link
+          className="fw-bold me-1 text-white"
+          href="#"
+        >
+          <FontAwesomeIcon icon={faCartShopping} className="me-1" />
+        </Nav.Link>
       </div>
-        
       </Navbar>
-      <Navbar className="px-4 nav-bar-bg nav-bar_links light" expand="lg">   
+
+      <div>
+      <Navbar className="px-4 nav-bar-bg nav-bar_links light justify-content-between" expand="lg">   
+      <div>
         <Nav>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
-          <Nav className="ml-auto">
+          <Nav className="ml-auto fw-bold">
             <NavDropdown title="Departments" id="departments-dropdown">
 
               <NavDropdown.Item as={Link} to="/departments/computers-tablets">
@@ -63,22 +81,51 @@ function Header() {
                 Printers
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className="text-white" as={Link} to="/brands">
+            <Nav.Link className="text-white fw-bold" as={Link} to="/brands">
               Brands
             </Nav.Link>
-            <Nav.Link className="text-white" as={Link} to="/services">
+            <Nav.Link className="text-white fw-bold" as={Link} to="/services">
               Services
             </Nav.Link>
-            <Nav.Link className="text-white" as={Link} to="/promos">
+            <Nav.Link className="text-white fw-bold" as={Link} to="/promos">
               Promos
             </Nav.Link>
-            <Nav.Link className="text-white" as={Link} to="/deals">
+            <Nav.Link className="text-white fw-bold" as={Link} to="/deals">
               Deals
             </Nav.Link>
+            <Nav.Link className="text-white fw-bold" as={Link} to="/deals">
+              New
+            </Nav.Link>
+            <Nav.Link className="text-white fw-bold" as={Link} to="/deals">
+              Tax Free
+            </Nav.Link>
           </Nav>
+          
         </Navbar.Collapse>
       </Nav>
-    </Navbar>
+      </div>
+      <div className="d-flex">
+        <Nav.Link className="text-white me-4 fw-bold" as={Link} to="/deals">
+            Orders
+        </Nav.Link>
+        <Nav.Link className="text-white me-4 fw-bold" as={Link} to="/deals">
+            Returns
+        </Nav.Link>
+        <Nav.Link className="text-white me-4 fw-bold" as={Link} to="/deals">
+            Help
+        </Nav.Link>
+        <Nav.Link
+          className="me-1 text-white fw-bold"
+          href="#"
+          >
+          <FontAwesomeIcon icon={faStore} className="me-1"/>
+          Stores
+        </Nav.Link>
+
+      </div>
+
+       </Navbar>
+    </div>
 </div>
 
   );
