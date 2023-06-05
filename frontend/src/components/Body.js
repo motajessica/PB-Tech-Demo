@@ -11,7 +11,7 @@ function Body() {
     <div>
       <Routes>
         <Route exact path="/page0" element={<Page0/>} />
-        <Route path="/business_laptops" element={<LaptopResults/>} />
+        <Route path="/business_laptops" element={<LaptopResults />} />
         <Route path="/page2" element={<Page2/>} />
       </Routes>
       <Outlet />

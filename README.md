@@ -2,16 +2,22 @@
 The easiest way to get the application up and running is by using docker compose. Simply run `docker-compose up` from the root of the project and it'll build all the images and get the containers up and running.
 
 ## Development setup
-You don't want to rebuild the images everytime you make changes in the code though. So the best way to do a development setup is by stopping the backend and the frontend containers and running them locally in your machine. You can still use the mongo image to avoid having to setup it yourself in your machine. 
+You don't want to rebuild the images everytime you make changes in the code though. So the best way to do a development setup is by stopping the backend and the frontend containers and running the Node server and the React app locally in your machine. You can still use the mongo image to avoid having to setup it yourself in your machine. 
 
-To do that do as follows: 
+To do that do as follow: 
 
-You can build a mongo image by runnin `docker-compose up`  from the command line. If you choose this option make sure to find the backend, frontend and the mongo containers and stop them. You can do that on Docker Desktop or via command line. 
+You can build a mongo image by running `docker-compose up`  from the command line. If you choose this option make sure to find the backend, frontend and the mongo containers and stop them as the `docker-compose up` command will build the images and start the containers. You can do that on Docker Desktop or via command line. 
 
 ### Start the database server
 If you want to use as database the `mongo` container that was created with `docker-compose up` just make sure you start it in the right port so your machine can find it. 
 
 Run `docker run -p 27017:27017 mongo`. It should get your mongo db container up and running in the port that the backend app will find.
+
+### Populate local database with seeds
+Once your database server is running you can populate it with some laptop records by running a script from the backend folder. 
+`npm run seeds` 
+
+What it does is to execute the script in the `backend/src/db/seeds.js` file.
 
 ### Start the backend
 
@@ -28,7 +34,7 @@ Install dependencies
 
 Run your app in dev mode to make sure the app finds the database 
 
-`npm run dev` 
+`npm start` 
 
 
 If it works you should get the this:
