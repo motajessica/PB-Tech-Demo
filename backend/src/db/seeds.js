@@ -8,6 +8,7 @@ mongoose
   () => {
     console.log('MongoDB Connected')
     console.log('Writing seed data to MongoDB database')
+    Laptop.deleteMany();
     laptops.forEach (async (laptop) => {
       const newLaptop = new Laptop( laptop );
       const savedItem = await newLaptop.save();

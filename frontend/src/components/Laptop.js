@@ -3,7 +3,6 @@ import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-
 function Laptop(props) {
   const { laptop } = props;
   return (
@@ -11,10 +10,11 @@ function Laptop(props) {
       <Card>
         <div className="row g-0">
           <div className="col-md-3">
-            <Card.Img src="images/laptop.jpg" alt="Card image 1" />{laptop.image}
+            <Card.Img src={laptop.image} alt="Laptop image" />
+            
           </div>
           <div className="col-md-6">
-            <Card.Body >
+            <Card.Body>
               <h5 className="card-title">{laptop.title}</h5>
               <p className="card-text">
                 {" "}

@@ -14,8 +14,8 @@ function Body() {
       <Routes>
         <Route exact path="/page0" element={<Page0/>} />
         <Route path="/business_laptops" element={<LaptopResults />} />
-        <Route path="custom_search"  element={<CustomSearch />} />
-        <Route path="custom_search_2"  element={<CustomSearch2 />} />
+        <Route path="custom_search/*"  element={<CustomSearch />} />
+        {/* <Route path="custom_search_2"  element={<CustomSearch2 />} /> */}
         <Route path="/page2" element={<Page2/>} />
       </Routes>
       <Outlet />

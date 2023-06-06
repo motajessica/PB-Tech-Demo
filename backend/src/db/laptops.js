@@ -1,7 +1,7 @@
 const laptops = [
   {
     name: "HP Probook 450 G9",
-    image: "images/laptop.jpg",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i7",
     memorySize: "16GB",
     screenSize: "15.6 inches",
@@ -15,6 +15,7 @@ const laptops = [
   },
   {
     name: "Lenovo V15 G2",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i5",
     memorySize: "8GB",
     screenSize: "14 inches",
@@ -28,6 +29,7 @@ const laptops = [
   },
   {
     name: "Lenovo V15 G2",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i5",
     memorySize: "16GB",
     screenSize: "15.6 inches",
@@ -41,6 +43,7 @@ const laptops = [
   },
   {
     name: "Dell XPS 13",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i7",
     memorySize: "16GB",
     screenSize: "13.3 inches",
@@ -54,6 +57,7 @@ const laptops = [
   },
   {
     name: "MacBook Pro 13",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Apple M1",
     memorySize: "8GB",
     screenSize: "13.3 inches",
@@ -67,6 +71,7 @@ const laptops = [
   },
   {
     name: "HP Pavilion 15",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i5",
     memorySize: "12GB",
     screenSize: "15.6 inches",
@@ -80,6 +85,7 @@ const laptops = [
   },
   {
     name: "Lenovo ThinkPad X1 Carbon",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i7",
     memorySize: "16GB",
     screenSize: "14 inches",
@@ -93,6 +99,7 @@ const laptops = [
   },
   {
     name: "Dell Inspiron 15",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "AMD Ryzen 7",
     memorySize: "16GB",
     screenSize: "15.6 inches",
@@ -106,6 +113,7 @@ const laptops = [
   },
   {
     name: "MacBook Air",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Apple M1",
     memorySize: "8GB",
     screenSize: "13.3 inches",
@@ -119,6 +127,7 @@ const laptops = [
   },
   {
     name: "HP Spectre x360",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i7",
     memorySize: "16GB",
     screenSize: "13.3 inches",
@@ -132,6 +141,7 @@ const laptops = [
   },
   {
     name: "Lenovo Yoga C940",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i7",
     memorySize: "16GB",
     screenSize: "14 inches",
@@ -145,6 +155,7 @@ const laptops = [
   },
   {
     name: "Dell Latitude 14",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i5",
     memorySize: "8GB",
     screenSize: "14 inches",
@@ -158,6 +169,7 @@ const laptops = [
   },
   {
     name: "MacBook Pro 16",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i9",
     memorySize: "16GB",
     screenSize: "16 inches",
@@ -171,6 +183,7 @@ const laptops = [
   },
   {
     name: "HP Envy 13",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i7",
     memorySize: "8GB",
     screenSize: "13.3 inches",
@@ -184,6 +197,7 @@ const laptops = [
   },
   {
     name: "Lenovo IdeaPad 5",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "AMD Ryzen 5",
     memorySize: "8GB",
     screenSize: "15.6 inches",
@@ -197,6 +211,7 @@ const laptops = [
   },
   {
     name: "Dell XPS 15",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i9",
     memorySize: "32GB",
     screenSize: "15.6 inches",
@@ -210,6 +225,7 @@ const laptops = [
   },
   {
     name: "MacBook Air M1",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Apple M1",
     memorySize: "16GB",
     screenSize: "13.3 inches",
@@ -223,6 +239,7 @@ const laptops = [
   },
   {
     name: "HP Omen 15",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "Intel Core i7",
     memorySize: "16GB",
     screenSize: "15.6 inches",
@@ -236,6 +253,7 @@ const laptops = [
   },
   {
     name: "Lenovo Legion 5",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
     cpuFamily: "AMD Ryzen 7",
     memorySize: "16GB",
     screenSize: "15.6 inches",
@@ -248,3 +266,6 @@ const laptops = [
     brand: "Lenovo",
   },
 ];
+
+
+module.exports = laptops;
