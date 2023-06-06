@@ -2,6 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 const Step1 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
@@ -14,15 +17,24 @@ const Step1 = ({ formState, updateFormState }) => {
 
   const screenSizeOptions = ["11-12", "13", "14", "15", "16", "17"];
 
-
-  const usageOptions = ["General use", "Home use", "School use", "Office work", "Gamming", "Heavy Work", "Programming" ]
+  const usageOptions = [
+    "General use",
+    "Home use",
+    "School use",
+    "Office work",
+    "Gamming",
+    "Heavy Work",
+    "Programming",
+  ];
 
   return (
     <div>
-      <div className="custom-search-title fw-bold mt-5">
-        <h1 className="filter-border"> Find your perfect laptop</h1>
+      <div className="custom-search-title fw-bold mt-5 text-center">
+        <h1 className="filter-border d-inline-block px-5"> 
+          Find your perfect laptop
+        </h1>
       </div>
-      <p>
+      <p className="text-muted">
         With all different specs and extras added to Laptops, it can get
         confusing when trying to decide which fits you best. Get started by
         answering the questions below.
@@ -40,8 +52,8 @@ const Step1 = ({ formState, updateFormState }) => {
         }}
       >
         <Form className="form">
-          <div className="form-group mb-3">
-            <span>What type of laptop are you looking for?</span>
+          <div className="form-group mb-3 mt-5">
+            <span className="filter-category-title">What type of laptop are you looking for?</span>
             <div>
               {laptopTypesOptions.map((option) => (
                 <div className="form-check-inline" key={option.value}>
@@ -60,8 +72,8 @@ const Step1 = ({ formState, updateFormState }) => {
           </div>
 
           <div className="form-group mb-3">
-            <label>Screen size</label>
-            <div className="form-check">
+            <label className="filter-category-title">Screen size</label>
+            <div className="form-check mt-3">
               {screenSizeOptions.map((option) => (
                 <div key={option}>
                   <Field
@@ -77,8 +89,8 @@ const Step1 = ({ formState, updateFormState }) => {
           </div>
 
           <div className="form-group mb-3">
-            <label>What kind of work will you do with this laptop?</label>
-            <div className="form-check">
+            <label className="filter-category-title">What kind of work will you do with this laptop?</label>
+            <div className="form-check mt-3">
               {usageOptions.map((option) => (
                 <div key={option}>
                   <Field
@@ -93,7 +105,13 @@ const Step1 = ({ formState, updateFormState }) => {
             </div>
           </div>
 
-          <button type="submit">Next</button>
+          <div className="d-flex justify-content-end">
+            <button type="submit" className="filter-next-back-border px-5 d-flex justify-content-end">
+              Next Page
+              <FontAwesomeIcon className="ms-3" icon={faArrowRight}/>
+            </button>
+          </div>
+
         </Form>
       </Formik>
     </div>

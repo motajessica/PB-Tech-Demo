@@ -10,25 +10,6 @@ function CustomSearch(pops) {
   const updateFormState = (newState) => {
     setFormState(newState);
   };
- 
-  // const handleSelectBrand = (event) => {
-  //   const selectedBrand = event.CustomSearch;
-  //   setBrand(selectedBrand);
-  // };
-
-  // const handleSubmit = (events) => {
-  //   const queryParams = new URLSearchParams(events).toString();
-
-  //   fetch(`http://localhost:9000/laptops?${queryParams}`)
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
-
   return (
     <div className="container">
       <Routes>

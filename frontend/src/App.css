@@ -35,7 +35,7 @@
 .custom-search-title {
   color: orange;
   font-size: 2rem;
-  border: 2
+  
 }
 
 .filter-category-title {
@@ -48,9 +48,25 @@
 .filter-border {
   color: orange;
   border-style: solid;
-
 }
-.filter-border-results{
+
+.filter-next-back-border{
+  color: orange;
+  border-style: solid;
+  font-size: 1.5rem;
+}
+.filter-next-back-border {
+  display: inline-block;
+  border: 2px solid orange;
+  background-color: transparent;
+  color: orange;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-next-back-border:hover {
   background-color: orange;
   color: white;
 }
