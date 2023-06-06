@@ -11,7 +11,7 @@ function Laptop(props) {
       <Card>
         <div className="row g-0">
           <div className="col-md-3">
-            <Card.Img src="images/laptop.jpg" alt="Card image 1" />
+            <Card.Img src="images/laptop.jpg" alt="Card image 1" />{laptop.image}
           </div>
           <div className="col-md-6">
             <Card.Body >

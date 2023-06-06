@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-
 function CustomSearch(pops) {
-
-
   // const [brand, setBrand] = useState(null);
   // const handleSelectBrand = (event) => {
   //   const selectedBrand = event.CustomSearch;
@@ -25,13 +22,13 @@ function CustomSearch(pops) {
   //     .catch((error) => {
   //       console.log(error);
   //     });
-  // }; 
+  // };
 
   return (
     <div className="container">
       {/* Title */}
       <div className="custom-search-title fw-bold mt-5">
-       <span className="filter-border"> Find your perfefct laptop</span>
+        <span className="filter-border"> Find your perfefct laptop</span>
       </div>
       <p>
         With all different specs and extras added to Laptops, it can get
@@ -39,44 +36,33 @@ function CustomSearch(pops) {
         answering the questions below.
       </p>
       {/* Filters Type */}
-      <div className="filter-category-title" >
-        <div className="mb-4">
-         What Type of Laptop/s are you looking for? 
+      <div className="filter-category-title">
+        <div className="mb-4">What Type of Laptop/s are you looking for?</div>
+        <div className="d-flex justify-content-between">
+          <div className="btn btn-outline-primary border-1 ">
+            Business Laptops
+          </div>
+          <div className="btn btn-outline-primary border-1">
+            Home & Study Laptops
+          </div>
+          <div className="btn btn-outline-primary border-1">Gaming Laptops</div>
         </div>
-          <div className="d-flex justify-content-between">
-            <div className="btn btn-outline-primary border-1 ">
-              Business Laptops
-            </div>
-            <div className="btn btn-outline-primary border-1">
-              Home & Study Laptops
-            </div>
-            <div className="btn btn-outline-primary border-1">
-              Gaming Laptops
-            </div>
-          </div>
 
-          <div className="mb-4 mt-4">
-           What screen size do you prefer?
+        <div className="mb-4 mt-4">What screen size do you prefer?</div>
 
-            
+        <div className="mb-4 mt-4">
+          What kind of work will you do with this laptop?
+        </div>
 
-          </div>
-          
-          <div className="mb-4 mt-4">
-            What kind of work will you do with this laptop?
-
-
-          </div>
-
-          <Link to="/custom_search_2" className="d-flex justify-content-end text-decoration-none">
-
-            <span className="filter-border">
+        <Link
+          to="/custom_search_2"
+          className="d-flex justify-content-end text-decoration-none"
+        >
+          <span className="filter-border">
             Next Page
-      
-            <FontAwesomeIcon className="ms-2 me-2" icon={faArrowRight}/>
-            </span>
-           
-           </Link>
+            <FontAwesomeIcon className="ms-2 me-2" icon={faArrowRight} />
+          </span>
+        </Link>
 
         {/* <div className="filter-category-title">
           <div>

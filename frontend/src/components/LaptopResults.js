@@ -17,13 +17,11 @@ function LaptopResults(props) {
         console.log("RECEIVED RESPONSE FROM  API")
         console.log(jsonData)
 
-
         setLaptops(jsonData);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     };
-
     fetchData();
   },[])
 

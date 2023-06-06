@@ -16,7 +16,6 @@ function customSearch2 () {
       </Link>
     </div>
 
-
     <div className="filter-category-title" >
       <div className="mb-4">
         What is your budget? 
