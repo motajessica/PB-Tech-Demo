@@ -6,7 +6,9 @@ function LaptopResults(props) {
   const [laptops, setLaptops] = useState([]);
  
   useEffect(() => {
-    const apiUrl = `http://localhost:9000/laptops?${props}`;
+    const queryParams = new URLSearchParams(props).toString();
+
+    const apiUrl = `http://localhost:9000/laptops?${queryParams}`;
     const fetchData = async () => {
       try {
         const response = await fetch(apiUrl);
@@ -27,7 +29,7 @@ function LaptopResults(props) {
 
   return (
     <div className="container pt-4">
-      {laptops.map(function (laptop, index) {
+      {laptops && laptops.map(function (laptop, index) {
         return <Laptop laptop={laptop} key={index}/>;
       })}
     </div>

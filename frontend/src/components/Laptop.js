@@ -3,6 +3,7 @@ import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
+
 function Laptop(props) {
   const { laptop } = props;
   return (

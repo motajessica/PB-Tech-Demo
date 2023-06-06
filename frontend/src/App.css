@@ -21,10 +21,6 @@
 }
 
 
-.footer {
-  background-color: #464b4e;;
-}
-
 .dropdown-toggle {
   color: white;
 }
@@ -39,4 +35,31 @@
 
 .search-bar {
   width: 500px; 
+}
+
+.custom-search-title {
+  color: orange;
+  font-size: 2rem;
+  border: 2
+}
+
+.filter-category-title {
+  color: #0c5079;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.filter-border {
+  color: orange;
+  border-style: solid;
+
+}
+.filter-border-results{
+  background-color: orange;
+  color: white;
+}
+
+.footer {
+  background-color: #464b4e;;
 }

@@ -9,6 +9,7 @@ const laptops = [
     gpuModel: "Integrated Graphics",
     opSystem: "Windows 10 Pro",
     price: "$1299",
+    brand: "Dell"
   },
   {
     cpuFamily: "Intel Core i5",
@@ -20,6 +21,7 @@ const laptops = [
     gpuModel: "NVIDIA GeForce MX150",
     opSystem: "Windows 10 Home",
     price: "$899",
+    brand: "Lenovo"
   },
   {
     cpuFamily: "AMD Ryzen 7",
@@ -31,6 +33,7 @@ const laptops = [
     gpuModel: "Integrated Graphics",
     opSystem: "Windows 11 Pro",
     price: "$1499",
+    brand: "Macbook"
   },
   {
     cpuFamily: "Intel Core i9",
