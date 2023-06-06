@@ -23,7 +23,7 @@ function customSearch2 () {
         Which feature do you want in your laptop? 
       </div>
       <div className="mb-4">
-        Which type of processor are you lookinf for? 
+        Which type of processor are you looking for? 
       </div>
     </div>
 
