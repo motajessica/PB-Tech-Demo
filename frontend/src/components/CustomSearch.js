@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Route, Routes} from 'react-router-dom';
 import Step1 from './customSearch/Step1'
 import Step2 from './customSearch/Step2'
@@ -14,7 +10,7 @@ function CustomSearch(pops) {
   const updateFormState = (newState) => {
     setFormState(newState);
   };
-  // const [brand, setBrand] = useState(null);
+ 
   // const handleSelectBrand = (event) => {
   //   const selectedBrand = event.CustomSearch;
   //   setBrand(selectedBrand);

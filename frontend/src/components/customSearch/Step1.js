@@ -29,6 +29,7 @@ const Step1 = ({ formState, updateFormState }) => {
         initialValues={{
           category: formState.category || '',
           screenSizes: formState.screenSizes || [],
+          purposes: formState.purposes || []
         }}
         onSubmit={(values) => {
           updateFormState({ ...formState, ...values });
