@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-
 const Step1 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
@@ -30,7 +29,7 @@ const Step1 = ({ formState, updateFormState }) => {
   return (
     <div>
       <div className="custom-search-title fw-bold mt-5 text-center">
-        <h1 className="filter-border d-inline-block px-5"> 
+        <h1 className="filter-border d-inline-block px-5">
           Find your perfect laptop
         </h1>
       </div>
@@ -53,7 +52,9 @@ const Step1 = ({ formState, updateFormState }) => {
       >
         <Form className="form">
           <div className="form-group mb-3 mt-5">
-            <span className="filter-category-title">What type of laptop are you looking for?</span>
+            <span className="filter-category-title">
+              What type of laptop are you looking for?
+            </span>
             <div>
               {laptopTypesOptions.map((option) => (
                 <div className="form-check-inline" key={option.value}>
@@ -89,7 +90,9 @@ const Step1 = ({ formState, updateFormState }) => {
           </div>
 
           <div className="form-group mb-3">
-            <label className="filter-category-title">What kind of work will you do with this laptop?</label>
+            <label className="filter-category-title">
+              What kind of work will you do with this laptop?
+            </label>
             <div className="form-check mt-3">
               {usageOptions.map((option) => (
                 <div key={option}>
@@ -105,13 +108,15 @@ const Step1 = ({ formState, updateFormState }) => {
             </div>
           </div>
 
-          <div className="d-flex justify-content-end">
-            <button type="submit" className="filter-next-back-border px-5 d-flex justify-content-end">
+          <div className="d-flex justify-content-end align-items-center">
+            <button
+              type="submit"
+              className="filter-next-back-border px-5 d-flex align-items-center"
+            >
               Next Page
-              <FontAwesomeIcon className="ms-3" icon={faArrowRight}/>
+              <FontAwesomeIcon className="ms-3" icon={faArrowRight} />
             </button>
           </div>
-
         </Form>
       </Formik>
     </div>
