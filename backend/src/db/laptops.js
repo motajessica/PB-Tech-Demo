@@ -7,7 +7,7 @@ const laptops = [
     screenSize: "15.6 inches",
     screenReso: "1920x1080",
     ssdCapacity: "512GB",
-    hdCapacity: "N/A",
+    hddCapacity: "N/A",
     gpuModel: "Integrated Graphics",
     opSystem: "Windows 10 Pro",
     price: "$1725",
