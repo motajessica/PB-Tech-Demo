@@ -11,9 +11,11 @@ function Body() {
     <div>
       <Routes>
         <Route exact path="/page0" element={<Page0/>} />
-        <Route path="/business_laptops" element={<LaptopResults />} />
+        <Route path="/business_laptops" element={<LaptopResults filters={{laptopType: 'business'}} />} />
+        <Route path="/laptops" element={<LaptopResults filters={{}} />} />
         <Route path="custom_search/*"  element={<CustomSearch />} />
         <Route path="/page2" element={<Page2/>}/>
+        <Route path="/laptops_results" element={<LaptopResults />} />
       </Routes>
       <Outlet />
     </div>

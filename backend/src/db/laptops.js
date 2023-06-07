@@ -11,7 +11,8 @@ const laptops = [
     gpuModel: "Integrated Graphics",
     opSystem: "Windows 10 Pro",
     price: "$1725",
-    brand: "HP",
+    brand: "HP",    
+    laptopType: "business"
   },
   {
     name: "Lenovo V15 G2",
@@ -26,6 +27,7 @@ const laptops = [
     opSystem: "Windows 11 Pro",
     price: "$977.50",
     brand: "Lenovo",
+    laptopType: "chromebook"
   },
   {
     name: "Lenovo V15 G2",
@@ -40,6 +42,7 @@ const laptops = [
     opSystem: "Windows 11 Pro",
     price: "$1476",
     brand: "Lenovo",
+    laptopType: "business"
   },
   {
     name: "Dell XPS 13",
@@ -54,6 +57,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1799",
     brand: "Dell",
+    laptopType: "business"
+
   },
   {
     name: "MacBook Pro 13",
@@ -68,6 +73,7 @@ const laptops = [
     opSystem: "macOS",
     price: "$1299",
     brand: "MacBook",
+    laptopType: "chromebook"
   },
   {
     name: "HP Pavilion 15",
@@ -82,6 +88,7 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$999",
     brand: "HP",
+    laptopType: "business"
   },
   {
     name: "Lenovo ThinkPad X1 Carbon",
@@ -96,6 +103,7 @@ const laptops = [
     opSystem: "Windows 10 Pro",
     price: "$1999",
     brand: "Lenovo",
+    laptopType: "business"
   },
   {
     name: "Dell Inspiron 15",
@@ -110,6 +118,7 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1199",
     brand: "Dell",
+    laptopType: "business"
   },
   {
     name: "MacBook Air",
@@ -124,6 +133,8 @@ const laptops = [
     opSystem: "macOS",
     price: "$1499",
     brand: "MacBook",
+    laptopType: "2_in_1"
+
   },
   {
     name: "HP Spectre x360",
@@ -138,6 +149,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1699",
     brand: "HP",
+    laptopType: "2_in_1"
+
   },
   {
     name: "Lenovo Yoga C940",
@@ -152,6 +165,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1499",
     brand: "Lenovo",
+    laptopType: "business"
+
   },
   {
     name: "Dell Latitude 14",
@@ -166,6 +181,8 @@ const laptops = [
     opSystem: "Windows 10 Pro",
     price: "$1299",
     brand: "Dell",
+    laptopType: "2_in_1"
+
   },
   {
     name: "MacBook Pro 16",
@@ -180,6 +197,7 @@ const laptops = [
     opSystem: "macOS",
     price: "$2399",
     brand: "MacBook",
+    laptopType: "business"
   },
   {
     name: "HP Envy 13",
@@ -194,6 +212,7 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1099",
     brand: "HP",
+    laptopType: "2_in_1"
   },
   {
     name: "Lenovo IdeaPad 5",
@@ -208,6 +227,7 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$799",
     brand: "Lenovo",
+    laptopType: "business"
   },
   {
     name: "Dell XPS 15",
@@ -236,6 +256,7 @@ const laptops = [
     opSystem: "macOS",
     price: "$1799",
     brand: "MacBook",
+    laptopType: "business"
   },
   {
     name: "HP Omen 15",
@@ -250,6 +271,7 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1599",
     brand: "HP",
+    laptopType: "2_in_1"
   },
   {
     name: "Lenovo Legion 5",
@@ -264,6 +286,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1799",
     brand: "Lenovo",
+    laptopType: "business"
+
   },
 ];
 

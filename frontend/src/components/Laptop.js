@@ -17,21 +17,20 @@ function Laptop(props) {
       <Card>
         <div className="row g-0">
           <div className="col-md-3">
-            <Card.Img src={laptop.image} />
+            <Card.Img src={`/images/${laptop.laptopType}.jpg`} alt="Laptop image" />
           </div>
           <div className="col-md-6">
             <Card.Body>
-              <h5 className="card-title">{laptop.name}</h5>
-              <p className="card-text">
-                Better value option for the same spec, but longer warranty with
-                a better price
-              </p>
-              {console.log(laptop)}
+            <h5 className="card-title">{laptop.name}</h5>
               <table className="table table-striped">
                 <tbody>
                   <tr>
-                    <td>CPU family:</td>
-                    <td>{laptop.cpuFamily}</td>
+                    <td>Laptop Type: {laptop.laptopType}</td>
+                  </tr>
+                  <tr>
+                    <td>CPU family: {laptop.cpuFamily}</td>
+                    <td> Memory size: {laptop.memorySize}</td>
+
                   </tr>
                   <tr>
                     <td>Memory size:</td>

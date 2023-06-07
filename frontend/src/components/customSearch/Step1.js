@@ -8,6 +8,34 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Step1 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
+// 
+  const handleSubmit = async (values) => {
+    try {
+      const response = await fetch('http://localhost:3000/laptops', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch laptops');
+      }
+
+      const data = await response.json();
+
+      console.log(data);
+
+      navigate('/custom_search/results');
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+
+
+  // 
   const laptopTypesOptions = [
     { label: "Traditional Laptop", value: "traditional" },
     { label: "2 in 1 Laptop", value: "two_in_one" },

@@ -3,9 +3,10 @@ import Laptop from "./Laptop";
 
 function LaptopResults(props) {
   const [laptops, setLaptops] = useState([]);
+  const [searching, setSearching] = useState(true)
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(props).toString();
+    const queryParams = new URLSearchParams(props.filters).toString();
 
     const apiUrl = `http://localhost:9000/laptops?${queryParams}`;
     const fetchData = async () => {
@@ -17,6 +18,7 @@ function LaptopResults(props) {
         console.log(jsonData);
 
         setLaptops(jsonData);
+        setSearching(false)
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -26,10 +28,18 @@ function LaptopResults(props) {
 
   return (
     <div className="container pt-4">
-      {laptops &&
-        laptops.map(function (laptop, index) {
-          return <Laptop laptop={laptop} key={index} />;
-        })}
+      {
+        searching 
+        ?
+         "Spinner"
+        :
+        <>
+          <p><strong>Displaying {laptops.length} results</strong></p>
+          {laptops && laptops.map(function (laptop, index) {
+            return <Laptop laptop={laptop} key={index} />;
+          })}
+        </>  
+      }
     </div>
   );
 }

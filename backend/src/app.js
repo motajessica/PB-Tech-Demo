@@ -13,12 +13,8 @@ app.get('/laptops', async (req, res) => {
   const params = req.query
 
   try {
-    const laptops = await Laptop.find(req.query);
-    if (laptops && (laptops.length < 1)) {
-      return res.status(404).json({ message: 'laptop not found' });
-    }
-    
-
+    console.log(req.query)
+    const laptops = await Laptop.find(params);
     res.json(laptops);
   } catch (error) {
     console.error(error);
