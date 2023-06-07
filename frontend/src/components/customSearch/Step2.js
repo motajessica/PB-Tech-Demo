@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
@@ -43,7 +45,10 @@ const Step2 = ({ formState, updateFormState }) => {
   return (
     <div>
       <div className="custom-search-title fw-bold mt-5">
-        <h1 className="filter-border"> Find your perfect laptop</h1>
+        <h1 className="filter-border d-inline-block px-5">
+          {" "}
+          Find your perfect laptop
+        </h1>
       </div>
 
       <Formik
@@ -58,9 +63,9 @@ const Step2 = ({ formState, updateFormState }) => {
         }}
       >
         <Form className="form">
-          <div className="form-group mb-3">
-            <span>What is your budget?</span>
-            <div className="form-check">
+          <div className="form-group mb-3 mt-5">
+            <span className="filter-category-title">What is your budget?</span>
+            <div className="form-check mt-3">
               {laptopBudgetOptions.map((option) => (
                 <div key={option}>
                   <Field
@@ -69,14 +74,16 @@ const Step2 = ({ formState, updateFormState }) => {
                     value={option}
                     className="form-check-input"
                   />
-                  <label className="form-check-label">{option}</label>
+                  <label className="form-check-label mb-3">{option}</label>
                 </div>
               ))}
             </div>
           </div>
           <div className="form-group mb-3">
-            <span>Which Features do you want in your Laptop?</span>
-            <div className="form-check">
+            <span className="filter-category-title">
+              Which Features do you want in your Laptop?
+            </span>
+            <div className="form-check mt-3">
               {laptopFeatureOptions.map((option) => (
                 <div key={option}>
                   <Field
@@ -85,14 +92,16 @@ const Step2 = ({ formState, updateFormState }) => {
                     value={option}
                     className="form-check-input"
                   />
-                  <label className="form-check-label">{option}</label>
+                  <label className="form-check-label mb-3">{option}</label>
                 </div>
               ))}
             </div>
           </div>
           <div className="form-group mb-3">
-            <span>What type of processor are you looking for?</span>
-            <div className="form-check">
+            <span className="filter-category-title">
+              What type of processor are you looking for?
+            </span>
+            <div className="form-check mt-3">
               {cpuOptions.map((option) => (
                 <div key={option}>
                   <Field
@@ -101,12 +110,20 @@ const Step2 = ({ formState, updateFormState }) => {
                     value={option}
                     className="form-check-input"
                   />
-                  <label className="form-check-label">{option}</label>
+                  <label className="form-check-label mb-3 ">{option}</label>
                 </div>
               ))}
             </div>
           </div>
-          <button type="submit">Find your perfect Laptop</button>
+          <div className="d-flex justify-content-end align-items-center">
+            <button
+              type="submit"
+              className="filter-next-back-border px-5 d-flex align-items-center"
+            >
+              Find your perfect Laptop
+              <FontAwesomeIcon className="ms-3" icon={faArrowRight} />
+            </button>
+          </div>
         </Form>
       </Formik>
     </div>

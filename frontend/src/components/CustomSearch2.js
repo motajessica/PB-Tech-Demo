@@ -31,7 +31,7 @@ function customSearch2 () {
       <Link to="/results" className="d-flex justify-content-end text-decoration-none">
         <span className="filter-border-results">
 
-         Find your perfect Laptopt
+         Find your perfect Laptop
          <FontAwesomeIcon className="ms-2 me-2" icon={faArrowRight}/>
         </span>
       </Link>

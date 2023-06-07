@@ -17,11 +17,11 @@ function Laptop(props) {
       <Card>
         <div className="row g-0">
           <div className="col-md-3">
-            <Card.Img src="images/laptop.jpg" alt="Laptop image" />
+            <Card.Img src={laptop.image} />
           </div>
           <div className="col-md-6">
             <Card.Body>
-              <h5 className="card-title">{laptop.title}</h5>
+              <h5 className="card-title">{laptop.name}</h5>
               <p className="card-text">
                 Better value option for the same spec, but longer warranty with
                 a better price
