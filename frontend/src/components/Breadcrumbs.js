@@ -29,7 +29,7 @@ export default function Breadcrumbs() {
         </li>
         <li className="breadcrumb-item active" aria-current="page">
           Results
-        </li>
+        </li> 
       </ol>
     </nav>
   );

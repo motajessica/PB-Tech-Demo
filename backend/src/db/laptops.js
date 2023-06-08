@@ -12,7 +12,8 @@ const laptops = [
     opSystem: "Windows 10 Pro",
     price: "$1725",
     brand: "HP",    
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["Home use", "School work"]
   },
   {
     name: "Lenovo V15 G2",
@@ -27,7 +28,8 @@ const laptops = [
     opSystem: "Windows 11 Pro",
     price: "$977.50",
     brand: "Lenovo",
-    laptopType: "chromebook"
+    laptopType: "chromebook",
+    purposes: ["Gaming use"]
   },
   {
     name: "Lenovo V15 G2",
@@ -42,7 +44,8 @@ const laptops = [
     opSystem: "Windows 11 Pro",
     price: "$1476",
     brand: "Lenovo",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["Programming"]
   },
   {
     name: "Dell XPS 13",
@@ -57,8 +60,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1799",
     brand: "Dell",
-    laptopType: "business"
-
+    laptopType: "business",
+    purposes: ["Heavy Work"]
   },
   {
     name: "MacBook Pro 13",
@@ -73,7 +76,8 @@ const laptops = [
     opSystem: "macOS",
     price: "$1299",
     brand: "MacBook",
-    laptopType: "chromebook"
+    laptopType: "chromebook",
+    purposes: ["Office work"]
   },
   {
     name: "HP Pavilion 15",
@@ -88,7 +92,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$999",
     brand: "HP",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["Home use"]
   },
   {
     name: "Lenovo ThinkPad X1 Carbon",
@@ -103,7 +108,8 @@ const laptops = [
     opSystem: "Windows 10 Pro",
     price: "$1999",
     brand: "Lenovo",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["General use"]
   },
   {
     name: "Dell Inspiron 15",
@@ -118,7 +124,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1199",
     brand: "Dell",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["School use"]
   },
   {
     name: "MacBook Air",
@@ -133,7 +140,8 @@ const laptops = [
     opSystem: "macOS",
     price: "$1499",
     brand: "MacBook",
-    laptopType: "2_in_1"
+    laptopType: "2_in_1",
+    purposes: ["Home use"]
 
   },
   {
@@ -149,7 +157,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1699",
     brand: "HP",
-    laptopType: "2_in_1"
+    laptopType: "2_in_1",
+    purposes: ["Programming"]
 
   },
   {
@@ -165,7 +174,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1499",
     brand: "Lenovo",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["General use", "Office work"]
 
   },
   {
@@ -181,7 +191,8 @@ const laptops = [
     opSystem: "Windows 10 Pro",
     price: "$1299",
     brand: "Dell",
-    laptopType: "2_in_1"
+    laptopType: "2_in_1",
+    purposes: ["Gamming"]
 
   },
   {
@@ -197,7 +208,8 @@ const laptops = [
     opSystem: "macOS",
     price: "$2399",
     brand: "MacBook",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["Gamming"]
   },
   {
     name: "HP Envy 13",
@@ -212,7 +224,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1099",
     brand: "HP",
-    laptopType: "2_in_1"
+    laptopType: "2_in_1",
+    purposes: ["Gamming"]
   },
   {
     name: "Lenovo IdeaPad 5",
@@ -227,7 +240,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$799",
     brand: "Lenovo",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["Office work"]
   },
   {
     name: "Dell XPS 15",
@@ -242,6 +256,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$2799",
     brand: "Dell",
+    laptopType: "chromebook",
+    purposes: ["Office work"]
   },
   {
     name: "MacBook Air M1",
@@ -256,7 +272,8 @@ const laptops = [
     opSystem: "macOS",
     price: "$1799",
     brand: "MacBook",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["Office work"]
   },
   {
     name: "HP Omen 15",
@@ -271,7 +288,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1599",
     brand: "HP",
-    laptopType: "2_in_1"
+    laptopType: "2_in_1",
+    purposes: ["Heavy Work"]
   },
   {
     name: "Lenovo Legion 5",
@@ -286,7 +304,8 @@ const laptops = [
     opSystem: "Windows 10 Home",
     price: "$1799",
     brand: "Lenovo",
-    laptopType: "business"
+    laptopType: "business",
+    purposes: ["Heavy Work"]
 
   },
 ];

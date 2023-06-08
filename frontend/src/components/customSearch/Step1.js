@@ -98,7 +98,7 @@ const Step1 = ({ formState, updateFormState }) => {
                 <div key={option}>
                   <Field
                     type="checkbox"
-                    name="screenSize"
+                    name="purposes"
                     value={option}
                     className="form-check-input"
                   />

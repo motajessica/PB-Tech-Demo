@@ -5,7 +5,7 @@ import "../css/page2.css";
 import Dropdown from "./Dropdown";
 import {useSearchParams} from 'react-router-dom'
 function Page2() {
-  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchParams] = useSearchParams();
 
   console.log(searchParams)
   return (

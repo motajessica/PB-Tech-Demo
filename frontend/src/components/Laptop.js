@@ -26,6 +26,7 @@ function Laptop(props) {
                 <tbody>
                   <tr>
                     <td>Laptop Type: {laptop.laptopType}</td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td>CPU family: {laptop.cpuFamily}</td>
