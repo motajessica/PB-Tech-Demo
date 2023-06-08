@@ -4,7 +4,6 @@
 
 .nav-bar-bg {
   background-color: #0c5079;
-
 }
 
 .nav-bar-btn-search {
@@ -24,24 +23,26 @@
   color: white;
 }
 
+.dropdown-toggle:focus {
+  color: white !important;
+}
+
 .nav-link:hover {
   background-color:#0f3044a3 ;
 }
 
 .search-bar {
-  width: 500px; 
+  width: 500px;
 }
 
 .custom-search-title {
   color: orange;
   font-size: 2rem;
-  
 }
 
 .filter-category-title {
   color: #0c5079;
   font-weight: 600;
-  font-size: 1.5rem;
   text-align: left;
 }
 

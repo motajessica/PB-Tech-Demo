@@ -3,15 +3,14 @@ import LaptopResults from './LaptopResults';
 import Sidebar from "./SideBar";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
 
-function BusinessLaptops() {
+function Laptops() {
   return (
     <>
       <div className="p-4">
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
-          <BreadcrumbItem href="/business_laptops" active >Business Laptops</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops" active>Laptops</BreadcrumbItem>
         </Breadcrumb>
         <div className="row">
           <div className="col-3">
@@ -19,9 +18,9 @@ function BusinessLaptops() {
           </div>
           <div className="col-9">
             <div className="filter-category-title fs-5">
-              Business Laptops
+              All Laptops
             </div>
-            <LaptopResults filters={{laptopType: 'business'}}/>
+            <LaptopResults />
           </div>
         </div>
       </div>
@@ -29,4 +28,4 @@ function BusinessLaptops() {
   );
 }
 
-export default BusinessLaptops;
+export default Laptops;

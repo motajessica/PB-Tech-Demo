@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Laptop from "./Laptop";
-import { Link } from 'react-router-dom';
+import { ClipLoader } from "react-spinners";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ClipLoader from "react-spinners/ClipLoader.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function LaptopResults(props) {
   const [laptops, setLaptops] = useState([]);
@@ -32,17 +29,7 @@ function LaptopResults(props) {
   }, []);
 
   return (
-
-    <div className="container pt-4">
-
-        <div className="d-flex justify-content-start align-items-center mb-3">
-        
-        <Link className="align-items-center me-3" to="/page0">
-        <FontAwesomeIcon className="me-1" icon={faArrowLeft} />
-         home
-        </Link>
-      </div>
-    
+      <div className="">
       {
         searching 
         ?
