@@ -1,9 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { createSearchParams, useNavigate } from "react-router-dom";
 
 const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
@@ -58,8 +58,10 @@ const Step2 = ({ formState, updateFormState }) => {
           cpuOptions: formState.cpuOptions || [],
         }}
         onSubmit={(values) => {
-          updateFormState({ ...formState, ...values });
-          navigate("/Page2");
+          const formVals = { ...formState, ...values }
+          updateFormState(formVals);
+          const search = `?${createSearchParams(formVals)}`
+          navigate({pathname: "/Page2", search});
         }}
       >
         <Form className="form">

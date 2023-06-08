@@ -8,41 +8,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Step1 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
-// 
-  const handleSubmit = async (values) => {
-    try {
-      const response = await fetch('http://localhost:3000/laptops', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch laptops');
-      }
-
-      const data = await response.json();
-
-      console.log(data);
-
-      navigate('/custom_search/results');
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-
-
-  // 
   const laptopTypesOptions = [
-    { label: "Traditional Laptop", value: "traditional" },
+    { label: "Business laptop", value: "business" },
     { label: "2 in 1 Laptop", value: "two_in_one" },
     { label: "Chromebook", value: "chromebook" },
   ];
 
-  const screenSizeOptions = ["11-12", "13", "14", "15", "16", "17"];
+  const screenSizeOptions = ["11 inches", "12 inches", "13 inches", "14 inches", "15 inches", "16 inches", "17 inches"];
 
   const usageOptions = [
     "General use",
@@ -69,8 +41,8 @@ const Step1 = ({ formState, updateFormState }) => {
 
       <Formik
         initialValues={{
-          category: formState.category || "",
-          screenSizes: formState.screenSizes || [],
+          laptopType: formState.laptopType || "",
+          screenSize: formState.screenSize || [],
           purposes: formState.purposes || [],
         }}
         onSubmit={(values) => {
@@ -89,7 +61,7 @@ const Step1 = ({ formState, updateFormState }) => {
                   <label className="form-check-label mt-2">
                     <Field
                       type="radio"
-                      name="category"
+                      name="laptopType"
                       value={option.value}
                       className="form-check-input me-1"
                     />
@@ -107,7 +79,7 @@ const Step1 = ({ formState, updateFormState }) => {
                 <div key={option}>
                   <Field
                     type="checkbox"
-                    name="screenSizes"
+                    name="screenSize"
                     value={option}
                     className="form-check-input"
                   />
@@ -126,7 +98,7 @@ const Step1 = ({ formState, updateFormState }) => {
                 <div key={option}>
                   <Field
                     type="checkbox"
-                    name="screenSizes"
+                    name="screenSize"
                     value={option}
                     className="form-check-input"
                   />

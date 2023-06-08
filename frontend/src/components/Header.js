@@ -99,8 +99,8 @@ function Header() {
             <Nav.Link className="text-white fw-bold" as={Link} to="/deals">
               Tax Free
             </Nav.Link>
-            <Nav.Link className="text-white fw-bold" as={Link} to="/custom_search">
-              Custom Search
+            <Nav.Link className="text-white fw-bold" as={Link} to="/custom_search/step1">
+              Find your perfect laptop
             </Nav.Link>
           </Nav>
           

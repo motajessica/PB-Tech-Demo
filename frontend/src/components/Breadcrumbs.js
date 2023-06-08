@@ -22,7 +22,7 @@ export default function Breadcrumbs() {
           <a href="/">Computers & Tablets</a>
         </li>
         <li className="breadcrumb-item">
-          <a href="/">Laptops</a>
+          <a href="/laptops">Laptops</a>
         </li>
         <li className="breadcrumb-item">
           <a href="/custom_search/step1">Find your Perfect Laptop</a>

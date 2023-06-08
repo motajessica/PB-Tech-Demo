@@ -11,7 +11,14 @@ app.use(cors());
 
 app.get('/laptops', async (req, res) => {
   const params = req.query
+  for (let param in params) {
+    const value = params[param];
+    if (value === '' || value === null || (Array.isArray(value) && value.length === 0)) {
+      delete params[param];
+    }
+  }
 
+  console.log(params)
   try {
     console.log(req.query)
     const laptops = await Laptop.find(params);
@@ -21,6 +28,5 @@ app.get('/laptops', async (req, res) => {
     res.status(500).json({ message: 'Server Error' });
   }
 });
-
 
 module.exports = app;

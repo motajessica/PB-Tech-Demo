@@ -7,6 +7,7 @@ function LaptopResults(props) {
 
   useEffect(() => {
     const queryParams = new URLSearchParams(props.filters).toString();
+    console.log(`QUERY PARAMS ${queryParams}`)
 
     const apiUrl = `http://localhost:9000/laptops?${queryParams}`;
     const fetchData = async () => {
@@ -16,7 +17,6 @@ function LaptopResults(props) {
         const jsonData = await response.json();
         console.log("RECEIVED RESPONSE FROM  API");
         console.log(jsonData);
-
         setLaptops(jsonData);
         setSearching(false)
       } catch (error) {
