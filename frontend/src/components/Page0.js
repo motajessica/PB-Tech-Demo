@@ -13,12 +13,8 @@ function Page0() {
       <div>
         <Link to="/custom_search/step1">Find your perfect laptop</Link>
       </div>
-     
-
     </div>
   )
-
 }
-
 
 export default Page0;

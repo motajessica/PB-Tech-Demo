@@ -1,9 +1,7 @@
 .filter-container {
   padding: 10px;
-  width: 280px;
+  width: 100%;
   position: relative;
-  margin-left: 50px;
-  margin-top: 50px;
 }
 .filter-container-top{
     border: 2px solid #abacb1;
@@ -73,16 +71,11 @@
   width: 80%;
 }
 
-a{  
-    font-family: ;
-    text-decoration: none;
-     color: #0d4f77;
-     font-size: 15px;
+a {
+  text-decoration: none;
+  color: #0d4f77;
+  font-size: 15px;
 }
 .title{
-    margin-left: 50px;
-    
-}
-.breadcrumbs-container{
-    padding-bottom: 70px;
+  margin-left: 50px;
 }

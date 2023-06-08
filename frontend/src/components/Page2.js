@@ -1,50 +1,33 @@
 import React from "react";
 import LaptopResults from "./LaptopResults";
-import Breadcrumbs from "./Breadcrumbs";
 import "../css/page2.css";
-import Dropdown from "./Dropdown";
 import {useSearchParams} from 'react-router-dom'
+import Sidebar from "./SideBar";
+import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
 function Page2() {
   let [searchParams] = useSearchParams();
 
   console.log(searchParams)
   return (
     <>
-      <div className="breadcrumbs-container">
-        <Breadcrumbs></Breadcrumbs>
-      </div>
-      <div className="title">
-        <span className="filter-category-title ms-5 fs-1">
-          Our Recommendations for you:
-        </span>
-      </div>
-      <div className="main-container">
-        <div className="filter-container">
-          <div className="filter-container-top">
-            <h6>Results</h6>
+      <div className="p-4">
+        <Breadcrumb>
+          <BreadcrumbItem href="/">Home</BreadcrumbItem>
+          <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
+          <BreadcrumbItem href="/custom_search/step1">Find your Perfect Laptop</BreadcrumbItem>
+          <BreadcrumbItem href="/" active >Results</BreadcrumbItem>
+        </Breadcrumb>
+        <div className="row">
+          <div className="col-3">
+            <Sidebar/>
           </div>
-          <div className="filter-container-bottom">
-            <a href="/">
-              {"<"} Go Back
-            </a>
+          <div className="col-9">
+            <div className="filter-category-title fs-5">
+              Our Recommendations for you:
+            </div>
+            <LaptopResults filters={searchParams}/>
           </div>
-
-          <div className="filter-container-top">
-            <h6>Your PBtech Store</h6>
-          </div>
-          <div className="filter-container-bottom2">
-            <Dropdown></Dropdown>
-          </div>
-
-          <div className="filter-container-top">
-            <h6>Filters</h6>
-          </div>
-          <div className="filter-container-bottom">
-            <p>(No Filters Yet)</p>
-          </div>
-        </div>
-        <div className="laptop-cards">
-          <LaptopResults filters={searchParams} />
         </div>
       </div>
     </>
