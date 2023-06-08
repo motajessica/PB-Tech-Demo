@@ -11,20 +11,22 @@ app.use(cors());
 
 app.get('/laptops', async (req, res) => {
   const params = req.query
-
-  try {
-    const laptops = await Laptop.find(req.query);
-    if (laptops && (laptops.length < 1)) {
-      return res.status(404).json({ message: 'laptop not found' });
+  for (let param in params) {
+    const value = params[param];
+    if (value === '' || value === null || (Array.isArray(value) && value.length === 0)) {
+      delete params[param];
     }
-    
+  }
 
+  console.log(params)
+  try {
+    console.log(req.query)
+    const laptops = await Laptop.find(params);
     res.json(laptops);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server Error' });
   }
 });
-
 
 module.exports = app;

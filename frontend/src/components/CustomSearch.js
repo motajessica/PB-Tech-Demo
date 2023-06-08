@@ -5,7 +5,7 @@ import Step2 from './customSearch/Step2'
 import LaptopResults from "./LaptopResults";
 
 function CustomSearch(pops) {
-  const [formState, setFormState] = useState({screenSizes: [], category: null});
+  const [formState, setFormState] = useState({});
 
   const updateFormState = (newState) => {
     setFormState(newState);

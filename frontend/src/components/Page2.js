@@ -3,10 +3,11 @@ import LaptopResults from "./LaptopResults";
 import Breadcrumbs from "./Breadcrumbs";
 import "../css/page2.css";
 import Dropdown from "./Dropdown";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
+import {useSearchParams} from 'react-router-dom'
 function Page2() {
+  let [searchParams] = useSearchParams();
+
+  console.log(searchParams)
   return (
     <>
       <div className="breadcrumbs-container">
@@ -43,7 +44,7 @@ function Page2() {
           </div>
         </div>
         <div className="laptop-cards">
-          <LaptopResults />
+          <LaptopResults filters={searchParams} />
         </div>
       </div>
     </>

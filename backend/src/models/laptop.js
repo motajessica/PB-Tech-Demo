@@ -12,7 +12,9 @@ const LaptopSchema = new Schema({
     hddCapacity: String,
     gpuModel: String,
     opSystem: String,
-    price: String
+    price: String,
+    laptopType: String,
+    purposes: Array
 });
 
 const Laptop = mongoose.model('Laptop', LaptopSchema);

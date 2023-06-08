@@ -17,7 +17,7 @@ function Header() {
     <div>
       <Navbar className="px-4 py-3 nav-bar-bg nav-bar_links justify-content-between" expand="lg">
       <div className="d-flex">
-      <Navbar.Brand className="fw-bolder" href="/">
+      <Navbar.Brand className="fw-bolder" href="/page0">
           <img
             className="nav-logo"
             src="https://www.pbtech.co.nz/imglib/dd/pb-logo-alt.svg"
@@ -99,8 +99,8 @@ function Header() {
             <Nav.Link className="text-white fw-bold" as={Link} to="/deals">
               Tax Free
             </Nav.Link>
-            <Nav.Link className="text-white fw-bold" as={Link} to="/custom_search">
-              Custom Search
+            <Nav.Link className="text-white fw-bold" as={Link} to="/custom_search/step1">
+              Find your perfect laptop
             </Nav.Link>
           </Nav>
           

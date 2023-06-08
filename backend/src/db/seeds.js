@@ -1,8 +1,10 @@
 const laptops = require("./laptops")
 const mongoose = require('mongoose');
 const Laptop = require("../models/laptop")
+let dbUrl = `mongodb://mongo:27017/mongo`
+// dbUrl = `mongodb://localhost:27017/mongo` // Uncomment this to run on your local environment
 
-mongoose.connect(`mongodb://localhost:27017/mongo`, { useNewUrlParser: true }).then(
+mongoose.connect(dbUrl, { useNewUrlParser: true }).then(
   () => {
     console.log('MongoDB Connected')
     console.log('Writing seed data to MongoDB database')

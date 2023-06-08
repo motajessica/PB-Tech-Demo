@@ -9,12 +9,12 @@ const Step1 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
   const laptopTypesOptions = [
-    { label: "Traditional Laptop", value: "traditional" },
+    { label: "Business laptop", value: "business" },
     { label: "2 in 1 Laptop", value: "two_in_one" },
     { label: "Chromebook", value: "chromebook" },
   ];
 
-  const screenSizeOptions = ["11-12", "13", "14", "15", "16", "17"];
+  const screenSizeOptions = ["11 inches", "12 inches", "13 inches", "14 inches", "15 inches", "16 inches", "17 inches"];
 
   const usageOptions = [
     "General use",
@@ -41,8 +41,8 @@ const Step1 = ({ formState, updateFormState }) => {
 
       <Formik
         initialValues={{
-          category: formState.category || "",
-          screenSizes: formState.screenSizes || [],
+          laptopType: formState.laptopType || "",
+          screenSize: formState.screenSize || [],
           purposes: formState.purposes || [],
         }}
         onSubmit={(values) => {
@@ -61,7 +61,7 @@ const Step1 = ({ formState, updateFormState }) => {
                   <label className="form-check-label mt-2">
                     <Field
                       type="radio"
-                      name="category"
+                      name="laptopType"
                       value={option.value}
                       className="form-check-input me-1"
                     />
@@ -79,7 +79,7 @@ const Step1 = ({ formState, updateFormState }) => {
                 <div key={option}>
                   <Field
                     type="checkbox"
-                    name="screenSizes"
+                    name="screenSize"
                     value={option}
                     className="form-check-input"
                   />
@@ -98,7 +98,7 @@ const Step1 = ({ formState, updateFormState }) => {
                 <div key={option}>
                   <Field
                     type="checkbox"
-                    name="screenSizes"
+                    name="purposes"
                     value={option}
                     className="form-check-input"
                   />
