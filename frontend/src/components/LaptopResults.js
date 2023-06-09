@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import Laptop from "./Laptop";
 import { ClipLoader } from "react-spinners";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -28,12 +28,17 @@ function LaptopResults(props) {
     fetchData();
   }, []);
 
+  const spinnerCss = {
+    display: "block",
+    margin: "0 auto",
+  };
+
   return (
       <div className="">
       {
         searching 
         ?
-        <ClipLoader loading={searching} />
+        <ClipLoader loading={searching} size={150} cssOverride={spinnerCss}/>
         :
         <>
           <p><strong>Displaying {laptops.length} results</strong></p>

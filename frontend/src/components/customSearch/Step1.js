@@ -5,9 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
-import Sidebar from "../SideBar";
-import LaptopResults from "../LaptopResults";
-import CustomRadioButton from "../CustomRadioButton";
+import CustomSearchHeader from "../CustomSearchHeader";
 
 const Step1 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
@@ -41,11 +39,7 @@ const Step1 = ({ formState, updateFormState }) => {
         </Breadcrumb>
         <div className="row">
           <div className="col-12">
-            <div className="custom-search-title fw-bold mt-5 text-center">
-              <h1 className="filter-border d-inline-block px-5">
-                Find your perfect laptop
-              </h1>
-            </div>
+            <CustomSearchHeader/>
             <p className="text-muted">
               With all different specs and extras added to Laptops, it can get
               confusing when trying to decide which fits you best. Get started by
@@ -126,7 +120,7 @@ const Step1 = ({ formState, updateFormState }) => {
                     type="submit"
                     className="filter-next-back-border px-5 d-flex align-items-center"
                   >
-                    Next Page
+                    Next
                     <FontAwesomeIcon className="ms-3" icon={faArrowRight} />
                   </button>
                 </div>

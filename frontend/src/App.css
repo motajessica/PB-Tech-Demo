@@ -36,7 +36,7 @@
 }
 
 .custom-search-title {
-  color: orange;
+  color: #0c5079;
   font-size: 2rem;
 }
 
@@ -58,9 +58,9 @@
 }
 .filter-next-back-border {
   display: inline-block;
-  border: 2px solid orange;
+  border: 2px solid #0c5079;
   background-color: transparent;
-  color: orange;
+  color: #0c5079;
   padding: 0.5rem 1rem;
   text-decoration: none;
   cursor: pointer;
