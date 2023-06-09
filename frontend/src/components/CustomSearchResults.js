@@ -4,10 +4,9 @@ import "../css/page2.css";
 import {useSearchParams} from 'react-router-dom'
 import Sidebar from "./SideBar";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
-function Page2() {
+function CustomSearchResults() {
   let [searchParams] = useSearchParams();
 
-  console.log(searchParams)
   return (
     <>
       <div className="p-4">
@@ -34,4 +33,4 @@ function Page2() {
   );
 }
 
-export default Page2;
+export default CustomSearchResults;

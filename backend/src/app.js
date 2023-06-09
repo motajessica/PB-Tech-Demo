@@ -17,8 +17,6 @@ app.get('/laptops', async (req, res) => {
       delete params[param];
     }
   }
-
-  console.log(params)
   try {
     console.log(req.query)
     const laptops = await Laptop.find(params);
