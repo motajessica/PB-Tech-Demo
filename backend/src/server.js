@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 let dbUrl = `mongodb://mongo:27017/mongo`
+
 // dbUrl = `mongodb://localhost:27017/mongo` // Uncomment this to run on your local environment
 
 mongoose

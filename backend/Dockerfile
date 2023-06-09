@@ -16,7 +16,6 @@ COPY . .
 # Expose the network port on which your Node.js app listens
 EXPOSE 9000
 
-RUN npm run seeds
 
 # Specify the command to run within the container
 CMD ["npm", "start"]
