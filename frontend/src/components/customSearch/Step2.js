@@ -59,7 +59,7 @@ const Step2 = ({ formState, updateFormState }) => {
           const formVals = { ...formState, ...values }
           updateFormState(formVals);
           const search = `?${createSearchParams(formVals)}`
-          navigate({pathname: "/CustomSearchResults", search});
+          navigate({pathname: "/page2", search});
         }}
       >
         <Form className="form">

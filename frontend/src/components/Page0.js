@@ -36,24 +36,32 @@ function LaptopTypeResults(props) {
 
   return (
     <div className="app">
-      
       <div className="navigationLinks">
-        <div className="bColor">Home <b>&gt;</b> Computers & Tablets <b>&gt;</b>&thinsp;</div>
+        <div className="bColor">
+          Home <b>&gt;</b> Computers & Tablets <b>&gt;</b>&thinsp;
+        </div>
         <div className="gColor"> Laptops</div>
-      </div><br/>
+      </div>
+      <br />
       <div id="LaptopsLabel">Laptops</div>
       <div id="recommendedButtons">
         <div id="ShopByLaptopType">Shop by Laptop Type</div>
         <div id="ShopAllLaptops">Shop All Laptops&rarr;</div>
         <div id="EmptySpace">&thinsp;&thinsp;&thinsp;&thinsp;</div>
-        <div id="FindYourPerfectLaptop"><a className="aLink" href="./page2">Find your perfect Laptop&rarr;</a></div>
+        <div id="FindYourPerfectLaptop">
+          <a className="aLink" href="/custom_search/step1">
+            Find your perfect Laptop&rarr;
+          </a>
+        </div>
       </div>
-      
+
       <div className="container">
-        {laptopTypes.map((laptop, index)=> {
-            return <LaptopCard laptop={laptop} key={index}/>
+        {laptopTypes.map((laptop, index) => {
+          return <LaptopCard laptop={laptop} key={index} />;
         })}
-        <a href="./page2"><LaptopCard laptop={laptopItem}/></a>
+        <a href="/custom_search/step1">
+          <LaptopCard laptop={laptopItem} />
+        </a>
       </div>
     </div>
   );
