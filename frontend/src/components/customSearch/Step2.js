@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createSearchParams, useNavigate } from "react-router-dom";
-import CustomSeachHeader from "../CustomSearchHeader";
+import CustomSearchHeader from "../CustomSearchHeader";
+import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
 
 const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
@@ -45,10 +46,17 @@ const Step2 = ({ formState, updateFormState }) => {
   ];
   return (
     <div>
-      <div className="custom-search-title fw-bold mt-5">
-        <CustomSeachHeader/>
+    <div className="p-4">
+      <Breadcrumb>
+        <BreadcrumbItem href="/">Home</BreadcrumbItem>
+        <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
+        <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
+        <BreadcrumbItem href="/custom_search/step1" active>Find your Perfect Laptop</BreadcrumbItem>
+      </Breadcrumb>
+      <div className="row">
+        <div className="col-12">
+          <CustomSearchHeader/>
       </div>
-
       <Formik
         initialValues={{
           laptopBudget: formState.laptopBudget || [],
@@ -59,7 +67,7 @@ const Step2 = ({ formState, updateFormState }) => {
           const formVals = { ...formState, ...values }
           updateFormState(formVals);
           const search = `?${createSearchParams(formVals)}`
-          navigate({pathname: "/CustomSearchResults", search});
+          navigate({pathname: "/page2", search});
         }}
       >
         <Form className="form">
@@ -126,6 +134,8 @@ const Step2 = ({ formState, updateFormState }) => {
           </div>
         </Form>
       </Formik>
+    </div>
+    </div>
     </div>
   );
 };

@@ -22,7 +22,6 @@ app.get('/laptops', async (req, res) => {
     }
   }
   try {
-    console.log(req.query)
     const laptops = await Laptop.find(params);
     res.json(laptops);
   } catch (error) {

@@ -7,23 +7,20 @@ const laptopTypes = require("./LaptopTypes")
 const LaptopType = require("../models/laptopType")
 let dbUrl = `mongodb://mongo:27017/mongo`
 
-dbUrl = `mongodb://localhost:27017/mongo` // Uncomment this to run on your local environment
+// dbUrl = `mongodb://localhost:27017/mongo` // Uncomment this to run on your local environment
 
 mongoose.connect(dbUrl, { useNewUrlParser: true }).then(
   () => {
     console.log('MongoDB Connected')
     console.log('Writing seed data to MongoDB database')
-    laptops.forEach (async (laptop) => {
-      const newLaptop = new Laptop( laptop );
-      const savedItem = await newLaptop.save();
-      console.log(savedItem);
-    }) 
 
-    laptopTypes.forEach (async (laptopType) => {
-      const newLaptopType = new LaptopType( laptopType );
-      const savedItem = await newLaptopType.save();
-      console.log(savedItem);
-    })  
+    LaptopType.deleteMany({}).then(result => {
+      laptopTypes.forEach (async (laptopType) => {
+        const newLaptopType = new LaptopType( laptopType );
+        const savedItem = await newLaptopType.save();
+        console.log(savedItem);
+      })  
+    })
 
     //Task 6
     const messageItem= {
