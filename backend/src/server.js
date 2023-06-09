@@ -1,16 +1,16 @@
-const dotenv = require('dotenv');
-const app = require('./app');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+const dotenv = require("dotenv");
+const app = require("./app");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 
-let dbUrl = `mongodb://mongo:27017/mongo`
+let dbUrl = `mongodb://mongo:27017/mongo`;
 
-// dbUrl = `mongodb://localhost:27017/mongo` // Uncomment this to run on your local environment
+dbUrl = `mongodb://localhost:27017/mongo`; // Uncomment this to run on your local environment
 
 mongoose
   .connect(dbUrl, { useNewUrlParser: true })
-  .then(() => console.log('MongoDB Connected'))
-    .catch(err => console.log(err));
+  .then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.log(err));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
