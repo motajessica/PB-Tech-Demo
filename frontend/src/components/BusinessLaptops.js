@@ -1,13 +1,9 @@
 import React from "react";
-import LaptopResults from "./LaptopResults";
-import "../css/page2.css";
-import {useSearchParams} from 'react-router-dom'
+import LaptopResults from './LaptopResults';
 import Sidebar from "./SideBar";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
-function Page2() {
-  let [searchParams] = useSearchParams();
 
-  console.log(searchParams)
+function BusinessLaptops() {
   return (
     <>
       <div className="p-4">
@@ -15,8 +11,7 @@ function Page2() {
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
           <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
-          <BreadcrumbItem href="/custom_search/step1">Find your Perfect Laptop</BreadcrumbItem>
-          <BreadcrumbItem href="/" active >Results</BreadcrumbItem>
+          <BreadcrumbItem href="/business_laptops" active >Business Laptops</BreadcrumbItem>
         </Breadcrumb>
         <div className="row">
           <div className="col-3">
@@ -24,9 +19,9 @@ function Page2() {
           </div>
           <div className="col-9">
             <div className="filter-category-title fs-5">
-              Our Recommendations for you:
+              Business Laptops
             </div>
-            <LaptopResults filters={searchParams}/>
+            <LaptopResults filters={{laptopType: 'business'}}/>
           </div>
         </div>
       </div>
@@ -34,4 +29,4 @@ function Page2() {
   );
 }
 
-export default Page2;
+export default BusinessLaptops;
