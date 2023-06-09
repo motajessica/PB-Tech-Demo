@@ -7,11 +7,14 @@ import CustomSearchResults from './CustomSearchResults';
 import BusinessLaptops from './BusinessLaptops';
 import Laptops from "./Laptops";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ScrollToTop from './ScrollTop';
 
 import Index from './index';
+
 function Body() {
   return (
     <body>
+      <ScrollToTop/>
       <Routes>
         <Route exact path="/" element={<Page0/>} />
         <Route path="/business_laptops" element={<BusinessLaptops />} />

@@ -7,9 +7,9 @@ function CustomSeachHeader(pops) {
     setFormState(newState);
   };
   return (
-    <div className="container">
+    <div className="">
       <div className="custom-search-title fw-bold mt-5 text-center">
-        <h1 className="filter-border d-inline-block px-5">
+        <h1 className="filter-border d-inline-block px-5" style={{color: 'orange', border: '2px solid orange'}}>
           Find your perfect laptop
         </h1>
       </div>

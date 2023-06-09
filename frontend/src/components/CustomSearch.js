@@ -11,7 +11,7 @@ function CustomSearch(pops) {
     setFormState(newState);
   };
   return (
-    <div className="container">
+    <div className="container d-block" >
       <Routes>
       <Route
           path="/step1"

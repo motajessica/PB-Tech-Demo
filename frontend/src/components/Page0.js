@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import LaptopCard from "./LaptopCard";
 import '../HomepageApp.css';
+import { Link } from "react-router-dom";
 
 function LaptopTypeResults(props) {
 
@@ -46,7 +47,7 @@ function LaptopTypeResults(props) {
         <div id="ShopByLaptopType">Shop by Laptop Type</div>
         <div id="ShopAllLaptops">Shop All Laptops&rarr;</div>
         <div id="EmptySpace">&thinsp;&thinsp;&thinsp;&thinsp;</div>
-        <div id="FindYourPerfectLaptop"><a className="aLink" href="./page2">Find your perfect Laptop&rarr;</a></div>
+        <div id="FindYourPerfectLaptop"><a as={Link} style={{color: 'white'}} href="/custom_search/step1">Find your perfect Laptop&rarr;</a></div>
       </div>
       
       <div className="container">
