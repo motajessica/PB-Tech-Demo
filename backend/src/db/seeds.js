@@ -5,9 +5,9 @@ const Message = require("../models/Message")
 
 const laptopTypes = require("./LaptopTypes")
 const LaptopType = require("../models/laptopType")
-let dbUrl = `mongodb://mongo:27017/mongo`
+// let dbUrl = `mongodb://mongo:27017/mongo`
 
-// dbUrl = `mongodb://localhost:27017/mongo` // Uncomment this to run on your local environment
+dbUrl = `mongodb://localhost:27017/mongo` // Uncomment this to run on your local environment
 
 mongoose.connect(dbUrl, { useNewUrlParser: true }).then(
   () => {
