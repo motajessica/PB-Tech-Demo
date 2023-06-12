@@ -25,10 +25,6 @@ function CustomSearch(props) {
             <Step2 formState={formState} updateFormState={updateFormState} />
           }
         />
-        {/* <Route
-          path="/results"
-          element={<LaptopResults searchParams={formState} />}
-        /> */}
       </Routes>
     </div>
   );

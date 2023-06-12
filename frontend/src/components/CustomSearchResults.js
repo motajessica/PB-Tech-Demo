@@ -13,7 +13,7 @@ function CustomSearchResults() {
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops_types">Laptops Type</BreadcrumbItem>
           <BreadcrumbItem href="/custom_search/step1">Find your Perfect Laptop</BreadcrumbItem>
           <BreadcrumbItem href="/" active >Results</BreadcrumbItem>
         </Breadcrumb>

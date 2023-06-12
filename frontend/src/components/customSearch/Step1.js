@@ -4,7 +4,7 @@ import { Formik, Form, Field } from "formik";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
+import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
 import CustomSearchHeader from "../CustomSearchHeader";
 
 const Step1 = ({ formState, updateFormState }) => {
@@ -16,7 +16,15 @@ const Step1 = ({ formState, updateFormState }) => {
     { label: "Chromebook", value: "chromebook" },
   ];
 
-  const screenSizeOptions = ["11 inches", "12 inches", "13 inches", "14 inches", "15 inches", "16 inches", "17 inches"];
+  const screenSizeOptions = [
+    "11 inches",
+    "12 inches",
+    "13 inches",
+    "14 inches",
+    "15 inches",
+    "16 inches",
+    "17 inches",
+  ];
 
   const usageOptions = [
     "General use",
@@ -32,18 +40,20 @@ const Step1 = ({ formState, updateFormState }) => {
     <div>
       <div className="p-4">
         <Breadcrumb>
-          <BreadcrumbItem href="/">Home</BreadcrumbItem>
-          <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
-          <BreadcrumbItem href="/custom_search/step1" active>Find your Perfect Laptop</BreadcrumbItem>
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="/">Computers & Tablets</Breadcrumb.Item>
+          <Breadcrumb.Item href="/laptops">Laptops</Breadcrumb.Item>
+          <Breadcrumb.Item href="/custom_search/step1" active>
+            Find your Perfect Laptop
+          </Breadcrumb.Item>
         </Breadcrumb>
         <div className="row">
           <div className="col-12">
-            <CustomSearchHeader/>
+            <CustomSearchHeader />
             <p className="text-muted">
               With all different specs and extras added to Laptops, it can get
-              confusing when trying to decide which fits you best. Get started by
-              answering the questions below.
+              confusing when trying to decide which fits you best. Get started
+              by answering the questions below.
             </p>
 
             <Formik
@@ -59,23 +69,27 @@ const Step1 = ({ formState, updateFormState }) => {
             >
               <Form className="form">
                 <div className="form-group mb-3 mt-5">
-            <span className="filter-category-title">
-              What type of laptop are you looking for?
-            </span>
+                  <span className="filter-category-title">
+                    What type of laptop are you looking for?
+                  </span>
                   <div>
                     {laptopTypesOptions.map((option) => (
-                          <div className="form-check-inline" key={option.value}>
-                            <label className="form-check-label mt-2">
-                              <Field
-                                type="radio"
-                                name="laptopType"
-                                value={option.value}
-                                className="form-check-input me-1"
-                              />
-                              {option.label}
-                            </label>
-                          </div>
-                        ))}
+                      <button
+                        key={option.value}
+                        type="button"
+                        className={`btn btn-outline-secondary  me-2 ${
+                          formState.laptopType === option.value ? "active" : ""
+                        }`}
+                        onClick={() => {
+                          updateFormState({
+                            ...formState,
+                            laptopType: option.value,
+                          });
+                        }}
+                      >
+                        {option.label}
+                      </button>
+                    ))}
                   </div>
                 </div>
 
@@ -90,7 +104,7 @@ const Step1 = ({ formState, updateFormState }) => {
                           value={option}
                           className="form-check-input"
                         />
-                        <label className="form-check-label mb-3 ">{option}</label>
+                        <label className="form-check-label mb-3">{option}</label>
                       </div>
                     ))}
                   </div>
@@ -126,9 +140,9 @@ const Step1 = ({ formState, updateFormState }) => {
                 </div>
               </Form>
             </Formik>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

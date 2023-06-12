@@ -17,7 +17,6 @@ mongoose.connect(dbUrl, { useNewUrlParser: true }).then(
       laptopTypes.forEach (async (laptopType) => {
         const newLaptopType = new LaptopType( laptopType );
         const savedItem = await newLaptopType.save();
-        console.log(savedItem);
       })  
     })
 

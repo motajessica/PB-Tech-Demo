@@ -3,7 +3,7 @@ import LaptopResults from './LaptopResults';
 import Sidebar from "./SideBar";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
 
-function BusinessLaptops() {
+function BusinessLaptops() { //LaptopResultsByType
   return (
     <>
       <div className="p-4">

@@ -3,14 +3,10 @@ import { createSearchParams, useNavigate } from "react-router-dom";
 
 const LaptopType = ({ laptop }) => {
   const navigate = useNavigate();
-  const queryParams = `?${createSearchParams({
-    laptopType: laptop.laptopType,
-  })}`;
+  const queryParams = `?${createSearchParams({laptopType: laptop.laptopType,})}`;
 
   const handleClick = (event) => {
-    console.log(laptop.laptopType)
     navigate({ pathname: `/${laptop.laptopType}_laptops`, queryParams });
-    
   };
 
   return (
