@@ -1,13 +1,12 @@
 const laptops = require("./laptops")
 const mongoose = require('mongoose');
 const Laptop = require("../models/laptop")
-const Message = require("../models/Message")
 
 const laptopTypes = require("./LaptopTypes")
 const LaptopType = require("../models/laptopType")
 // let dbUrl = `mongodb://mongo:27017/mongo`
 
-// dbUrl = `mongodb://localhost:27017/mongo`  Uncomment this to run on your local environment
+dbUrl = `mongodb://localhost:27017/mongo`  //Uncomment this to run on your local environment
 
 mongoose.connect(dbUrl, { useNewUrlParser: true }).then(
   () => {
@@ -22,17 +21,6 @@ mongoose.connect(dbUrl, { useNewUrlParser: true }).then(
       })  
     })
 
-    //Task 6
-    const messageItem= {
-      message: "hello world"
-    }
-
-    const show = async () => {
-      const newMessage= new Message(messageItem);
-      const savedItem = await newMessage.save();
-      console.log(savedItem);
-    }
-    show();
     Laptop.deleteMany({})
       .then(result => {
         console.log('Deleted', result.deletedCount, 'documents');
@@ -42,7 +30,6 @@ mongoose.connect(dbUrl, { useNewUrlParser: true }).then(
           const savedItem = await newLaptop.save();
         })  
         console.log(`Saved ${laptops.length} new laptops`);
-        
       })
       .catch(err => {
         console.error('Error deleting documents:', err);

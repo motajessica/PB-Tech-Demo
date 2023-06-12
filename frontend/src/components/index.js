@@ -6,13 +6,8 @@ function Index(props) {
     const apiUrl = `http://localhost:9000/?${props}`;
     const fetchData = async () => {
       try {
-        const response = await fetch(apiUrl);
-        console.log("FETCHING API")
+        const response = await fetch(apiUrl);    
         const jsonData = await response.json();
-        console.log("RECEIVED RESPONSE FROM  API");
-        console.log(jsonData);
-
-
         setMessage(jsonData);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -22,11 +17,9 @@ function Index(props) {
     fetchData();
  
   },[])
-  // console.log(message);
+  
   return <div><br/><h2>{message.message}</h2></div>;
-  // return <h2>{message.map(m => (
-  //   <div>message: {message.message}</div>
-  // ))}</h2>;
+
 }
 
 
