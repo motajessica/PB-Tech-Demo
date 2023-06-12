@@ -100,7 +100,7 @@ function Header() {
               Tax Free
             </Nav.Link>
             <NavDropdown title="Laptop finder">
-              <NavDropdown.Item as={Link} to="/laptops">
+              <NavDropdown.Item as={Link} to="/all_laptops">
                 All Laptops
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/business_laptops">

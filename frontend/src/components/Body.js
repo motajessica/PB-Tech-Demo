@@ -16,9 +16,9 @@ function Body() {
     <body>
       <ScrollToTop/>
       <Routes>
-        <Route exact path="/" element={<Page0/>} />
+        <Route exact path="/laptops_types" element={<Page0/>} />
         <Route path="/business_laptops" element={<BusinessLaptops />} />
-        <Route path="/laptops" element={<Laptops />} />
+        <Route path="/all_laptops" element={<Laptops />} />
         <Route path="custom_search/*"  element={<CustomSearch />} />
         <Route path="/page2" element={<CustomSearchResults/>}/>
         <Route path="/laptops_results" element={<LaptopResults />} />

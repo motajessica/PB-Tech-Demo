@@ -10,7 +10,7 @@ function BusinessLaptops() {
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops_types">Laptops Type</BreadcrumbItem>
           <BreadcrumbItem href="/business_laptops" active >Business Laptops</BreadcrumbItem>
         </Breadcrumb>
         <div className="row">

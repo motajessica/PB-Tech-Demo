@@ -36,21 +36,25 @@ function LaptopTypeResults(props) {
     <div>
       <div className="navigationLinks mt-3">
       <Breadcrumb>
-          <BreadcrumbItem href="/" active>Home</BreadcrumbItem>
+          <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          
-          <BreadcrumbItem href="/"  >Laptop Types</BreadcrumbItem>
+          <BreadcrumbItem href="/laptop_types" active>Laptop Types</BreadcrumbItem>
         </Breadcrumb>
       </div>
 
       <div id="LaptopsLabel">Laptops</div>
       <div id="recommendedButtons">
-        <div id="ShopByLaptopType">Shop by Laptop Type</div>
-        <div clasnid="ShopAllLaptops">Shop All Laptops</div>
-        <div id="FindYourPerfectLaptop"><a as={Link} style={{color: 'white'}} href="/custom_search/step1">Find your perfect Laptop</a></div>
+      <div id="ShopByLaptopType">Shop by Laptop Type</div> 
+
+
+      <div className="py-2">
+        <Link to="/all_laptops" id="shopAllLaptops" className="btn btn-lg text-white">Shop All Laptops</Link>
+        <Link to="/custom_search/step1" id="FindYourPerfectLaptop" className="btn btn-lg text-white">Find your perfect Laptop</Link>
+      </div>
+  
       </div>
       
-
+      
       <div className="container">
         {laptopTypes.map((laptop, index)=> {
             return <LaptopType laptop={laptop} key={index}/>

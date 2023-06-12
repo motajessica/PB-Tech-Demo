@@ -10,7 +10,8 @@ function Laptops() {
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops" active>Laptops</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops_types">Laptop Types</BreadcrumbItem>
+          <BreadcrumbItem href="/all_laptops" active>All Laptops</BreadcrumbItem>
         </Breadcrumb>
         <div className="row">
           <div className="col-3">

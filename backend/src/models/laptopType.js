@@ -7,6 +7,8 @@ const LaptopTypeSchema = new Schema({
     lTitle: String,
     lDetail: String,
     imageSrc: String,
+    laptopType: String
+
 });
 const laptopType = mongoose.model('LaptopType', LaptopTypeSchema);
 
