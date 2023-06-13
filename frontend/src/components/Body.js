@@ -9,7 +9,6 @@ import Laptops from "./Laptops";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from './ScrollTop';
 
-import Index from './index';
 
 
 function Body() {
@@ -23,8 +22,6 @@ function Body() {
         <Route path="custom_search/*"  element={<CustomSearch />} />
         <Route path="/page2" element={<CustomSearchResults/>}/>
         <Route path="/laptops_results" element={<LaptopResults />} />
-        <Route path="/Index" element={<Index/>} />
-        <Route path="/" element={<Index/>} />
       </Routes>
       <Outlet />
     </body>
