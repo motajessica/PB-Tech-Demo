@@ -1,6 +1,6 @@
 import React from "react";
 import LaptopResults from "../LaptopResults";
-import "../css/page2.css";
+import "../../css/page2.css";
 import {useSearchParams} from 'react-router-dom'
 import Sidebar from "../layout/SideBar";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
