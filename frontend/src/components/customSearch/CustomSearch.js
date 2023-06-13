@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes} from 'react-router-dom';
-import Step1 from './customSearch/Step1'
-import Step2 from './customSearch/Step2'
-// import LaptopResults from "./LaptopResults";
+import Step1 from './Step1'
+import Step2 from './Step2'
 
 function CustomSearch(props) {
   const [formState, setFormState] = useState({});

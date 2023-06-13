@@ -1,13 +1,13 @@
 import React from 'react';
 import { Routes, Route, Outlet} from 'react-router-dom';
-import LaptopTypes from './LaptopTypes';
-import LaptopResults from './LaptopResults';
-import CustomSearch from './CustomSearch';
-import CustomSearchResults from './CustomSearchResults';
-import BusinessLaptops from './BusinessLaptops';
-import Laptops from "./Laptops";
+import LaptopTypes from '../LaptopTypes';
+import LaptopResults from '../LaptopResults';
+import CustomSearch from '../customSearch/CustomSearch';
+import CustomSearchResults from '../customSearch/CustomSearchResults';
+import BusinessLaptops from '../BusinessLaptops';
+import Laptops from "../Laptops";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ScrollToTop from './ScrollTop';
+import ScrollToTop from '../ScrollTop';
 
 
 

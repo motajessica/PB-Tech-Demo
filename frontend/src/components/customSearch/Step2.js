@@ -4,8 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createSearchParams, useNavigate } from "react-router-dom";
-import CustomSearchHeader from "../CustomSearchHeader";
+import CustomSearchHeader from "./CustomSearchHeader";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
+import Sidebar from "../layout/SideBar";
 
 const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ const Step2 = ({ formState, updateFormState }) => {
       <Breadcrumb>
         <BreadcrumbItem href="/">Home</BreadcrumbItem>
         <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-        <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
+        <BreadcrumbItem href="/laptops_types">Laptops Types</BreadcrumbItem>
         <BreadcrumbItem href="/custom_search/step1" active>Find your Perfect Laptop</BreadcrumbItem>
       </Breadcrumb>
       <div className="row">
