@@ -5,20 +5,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import CustomSearchHeader from "./CustomSearchHeader";
-import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
+import BreadcrumbItem from "react-bootstrap/BreadcrumbItem";
 import Sidebar from "../layout/SideBar";
 
 const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
+  // const laptopBudgetOptions = [
+  //   { label: 'Quite Low', value: '$1725' },
+  //   { label: "Low", value:'$1725'},
+  //   { label: "Average", value:'$1725'},
+  //   { label: "Above Average", value:'$1725'},
+  //   { label: "Expensive", value:'$1725'},
+  //   { label: "Premium", value: '$1725'},
+  // ];
+
   const laptopBudgetOptions = [
-    "Quite Low",
+    "$1725",
     "Low",
     "Average",
     "Above Average",
     "Expensive",
     "Premium",
   ];
+
   const laptopFeatureOptions = [
     "HD",
     "4K",
@@ -66,13 +77,6 @@ const Step2 = ({ formState, updateFormState }) => {
           gpuOptions: formState.gpuOptions || [],
         }}
 
-        // onSubmit={(values) => {
-        //   const formVals = { ...formState, ...values }
-        //   updateFormState(formVals);
-        //   const search = `?${createSearchParams(formVals)}`
-        //   navigate({pathname: "/page2", search});
-        // }}
-
         onSubmit={(values) => {
           updateFormState({ ...formState, ...values });
           const search = `?${createSearchParams({ ...formState, ...values })}`;
@@ -87,7 +91,7 @@ const Step2 = ({ formState, updateFormState }) => {
                 <div key={option}>
                   <Field
                     type="checkbox"
-                    name="laptopBudget"
+                    name="price"
                     value={option}
                     className="form-check-input"
                   />
