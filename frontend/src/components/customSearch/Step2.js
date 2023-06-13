@@ -32,16 +32,16 @@ const Step2 = ({ formState, updateFormState }) => {
     "IPS display",
     "Refurbished",
   ];
-  const cpuOptions = [
+  const gpuOptions = [
     "Low end Processors",
-    "Intel Core i3 Processors",
-    "Intel Core i5 Processors",
-    "Intel Core i7 Processors",
-    "Intel Core i9 Processors",
-    "AMD Ryzen 3 Processors",
-    "AMD Ryzen 5 Processors",
-    "AMD Ryzen 7 Processors",
-    "AMD Ryzen 9 Processors",
+    "Intel Core i3",
+    "Intel Core i5",
+    "Intel Core i7",
+    "Intel Core i9",
+    "AMD Ryzen 3",
+    "AMD Ryzen 5",
+    "AMD Ryzen 7",
+    "AMD Ryzen 9",
     "Apple M1",
     "Apple M2 Pro",
   ];
@@ -57,18 +57,26 @@ const Step2 = ({ formState, updateFormState }) => {
       <div className="row">
         <div className="col-12">
           <CustomSearchHeader/>
-      </div>
+        </div>
+
       <Formik
         initialValues={{
           laptopBudget: formState.laptopBudget || [],
           laptopFeatures: formState.laptopFeatures || [],
-          cpuOptions: formState.cpuOptions || [],
+          gpuOptions: formState.gpuOptions || [],
         }}
+
+        // onSubmit={(values) => {
+        //   const formVals = { ...formState, ...values }
+        //   updateFormState(formVals);
+        //   const search = `?${createSearchParams(formVals)}`
+        //   navigate({pathname: "/page2", search});
+        // }}
+
         onSubmit={(values) => {
-          const formVals = { ...formState, ...values }
-          updateFormState(formVals);
-          const search = `?${createSearchParams(formVals)}`
-          navigate({pathname: "/page2", search});
+          updateFormState({ ...formState, ...values });
+          const search = `?${createSearchParams({ ...formState, ...values })}`;
+          navigate({ pathname: "/page2", search });
         }}
       >
         <Form className="form">
@@ -111,11 +119,11 @@ const Step2 = ({ formState, updateFormState }) => {
               What type of processor are you looking for?
             </span>
             <div className="form-check mt-3">
-              {cpuOptions.map((option) => (
+              {gpuOptions.map((option) => (
                 <div key={option}>
                   <Field
                     type="checkbox"
-                    name="cpuOptions"
+                    name="gpuModel"
                     value={option}
                     className="form-check-input"
                   />

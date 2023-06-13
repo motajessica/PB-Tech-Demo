@@ -7,6 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
 import CustomSearchHeader from './CustomSearchHeader';
 import CustomRadioButton from '../CustomRadioButton';
+import Sidebar from "../layout/SideBar";
 
 const Step1 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();

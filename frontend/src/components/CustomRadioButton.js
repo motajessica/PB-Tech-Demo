@@ -8,7 +8,7 @@ const CustomRadioButton = ({ field, form, ...props }) => {
   return (
     <button
       type="button"
-      className={`btn ${field.value === props.value ? 'btn-primary active' : 'btn-secondary'}`}
+      className={`btn ${field.value === props.value ? 'btn-primary active' : 'btn-secondary'} me-5 my-4`}
       onClick={handleClick}
     >
       {props.label}
