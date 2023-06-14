@@ -12,7 +12,7 @@ const LaptopSchema = new Schema({
     hddCapacity: String,
     gpuModel: String,
     opSystem: String,
-    price: String,
+    price: Number,
     laptopType: String,
     purposes: Array
 });

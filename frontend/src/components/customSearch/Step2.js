@@ -12,23 +12,23 @@ import Sidebar from "../layout/SideBar";
 const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
-  // const laptopBudgetOptions = [
-  //   { label: 'Quite Low', value: '$1725' },
-  //   { label: "Low", value:'$1725'},
-  //   { label: "Average", value:'$1725'},
-  //   { label: "Above Average", value:'$1725'},
-  //   { label: "Expensive", value:'$1725'},
-  //   { label: "Premium", value: '$1725'},
-  // ];
-
   const laptopBudgetOptions = [
-    "$1725",
-    "Low",
-    "Average",
-    "Above Average",
-    "Expensive",
-    "Premium",
+    { label: 'Quite Low', value: 1725 },
+    { label: "Low", value: 1725},
+    { label: "Average", value: 1725},
+    { label: "Above Average", value:1725},
+    { label: "Expensive", value: 1725},
+    { label: "Premium", value: 1725},
   ];
+
+  // const laptopBudgetOptions = [
+  //   "$1725",
+  //   "Low",
+  //   "Average",
+  //   "Above Average",
+  //   "Expensive",
+  //   "Premium",
+  // ];
 
   const laptopFeatureOptions = [
     "HD",
@@ -92,10 +92,11 @@ const Step2 = ({ formState, updateFormState }) => {
                   <Field
                     type="checkbox"
                     name="price"
-                    value={option}
+                    value={option.value}
+                    id={`price${option.value}`}
                     className="form-check-input"
                   />
-                  <label className="form-check-label mb-3">{option}</label>
+                  <label className="form-check-label mb-3">{option.label}</label>
                 </div>
               ))}
             </div>
