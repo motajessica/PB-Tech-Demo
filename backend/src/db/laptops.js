@@ -40,7 +40,7 @@ const laptops = [
     screenReso: "2560x1600",
     ssdCapacity: "512GB",
     hddCapacity: "N/A",
-    gpuModel: "Apple M1",
+    gpuModel: "Integrated Graphics",
     opSystem: "macOS",
     price: 1399,
     brand: "MacBook",
@@ -393,7 +393,7 @@ const laptops = [
   {
     name: "Dell Inspiron 15",
     image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
-    cpuFamily: "AMD Ryzen 7",
+    cpuFamily: "AMD Ryzen 9",
     memorySize: "16GB",
     screenSize: "16 inches",
     screenReso: "1920x1080",
@@ -475,7 +475,7 @@ const laptops = [
   {
     name: "MacBook Air",
     image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
-    cpuFamily: "Apple M1",
+    cpuFamily: "Apple M1 Pro",
     memorySize: "8GB",
     screenSize: "13 inches",
     screenReso: "2560x1600",

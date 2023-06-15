@@ -35,8 +35,8 @@ const Step2 = ({ formState, updateFormState }) => {
     "IPS display",
     "Refurbished",
   ];
-  const gpuOptions = [
-    "Low end Processors",
+  const cpuFamilyOptions = [
+    "Intel Celeron",
     "Intel Core i3",
     "Intel Core i5",
     "Intel Core i7",
@@ -122,11 +122,11 @@ const Step2 = ({ formState, updateFormState }) => {
                   What type of processor are you looking for?
                 </span>
                 <div className="form-check mt-3">
-                  {gpuOptions.map((option) => (
+                  {cpuFamilyOptions.map((option) => (
                     <div key={option}>
                       <Field
                         type="checkbox"
-                        name="gpuModel"
+                        name="cpuFamily"
                         value={option}
                         className="form-check-input"
                       />
