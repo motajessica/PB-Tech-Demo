@@ -7,7 +7,6 @@ import { createSearchParams, useNavigate } from "react-router-dom";
 import CustomSearchHeader from "./CustomSearchHeader";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import BreadcrumbItem from "react-bootstrap/BreadcrumbItem";
-// import Slider from "../Slider";
 import Sidebar from "../layout/SideBar";
 
 const Step2 = ({ formState, updateFormState }) => {
@@ -22,18 +21,11 @@ const Step2 = ({ formState, updateFormState }) => {
     { label: "Premium", value: "1825-10000"},
   ];
 
-  const laptopFeatureOptions = [
-    "HD",
-    "4K",
-    "FHD",
-    "Dedicated GPU",
-    "Touchscreen",
-    "SSD Storage",
-    "Fingerprint Security",
-    "Backlit Keyboard",
-    "VR ready",
-    "IPS display",
-    "Refurbished",
+  const ssdCapacityOptions = [
+    "256GB",
+    "500GB",
+    "512GB",
+    "1T"
   ];
   const cpuFamilyOptions = [
     "Intel Celeron",
@@ -84,7 +76,6 @@ const Step2 = ({ formState, updateFormState }) => {
                 <span className="filter-category-title">
                   What is your budget?
                 </span>
-                {/* <Slider /> */}
                 <div className="form-check mt-3">
                   {laptopBudgetOptions.map((option, index) => (
                     <div key={index}>
@@ -101,14 +92,14 @@ const Step2 = ({ formState, updateFormState }) => {
               </div>
               <div className="form-group mb-3">
                 <span className="filter-category-title">
-                  Which Features do you want in your Laptop?
+                  What SSD Capacity do you want in your Laptop?
                 </span>
                 <div className="form-check mt-3">
-                  {laptopFeatureOptions.map((option) => (
+                  {ssdCapacityOptions.map((option) => (
                     <div key={option}>
                       <Field
                         type="checkbox"
-                        name="laptopFeatures"
+                        name="ssdCapacity"
                         value={option}
                         className="form-check-input"
                       />
