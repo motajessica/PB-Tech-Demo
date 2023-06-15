@@ -13,12 +13,12 @@ const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
   const laptopBudgetOptions = [
-    { label: "Quite Low", value: "0-999"},
-    { label: "Low", value: "1000-1125"},
-    { label: "Average", value: "1125-1250"},
-    { label: "Above Average", value: "1251-1725"},
-    { label: "Expensive", value: "1725-1825"},
-    { label: "Premium", value: "1825-10000"},
+    { label: "up to $999", value: "0-999"},
+    { label: "$1000 - $1125", value: "1000-1125"},
+    { label: "$1125 - $1250 ", value: "1125-1250"},
+    { label: "$1250 - $1725", value: "1251-1725"},
+    { label: "$1725 - $1825", value: "1725-1825"},
+    { label: "From $1825", value: "1825-10000"},
   ];
 
   const ssdCapacityOptions = [
