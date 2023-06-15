@@ -22,7 +22,7 @@ app.get('/laptops', async (req, res) => {
 
   if(!!params.price && params.price !== '') {
     const range = params.price.split("-")
-    params.price = { $gt: range[0], $lte: range }
+    params.price = { $gt: range[0], $lte: range[1] }
   }
 
   try {
