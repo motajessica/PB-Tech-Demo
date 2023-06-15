@@ -7,28 +7,20 @@ import { createSearchParams, useNavigate } from "react-router-dom";
 import CustomSearchHeader from "./CustomSearchHeader";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import BreadcrumbItem from "react-bootstrap/BreadcrumbItem";
+// import Slider from "../Slider";
 import Sidebar from "../layout/SideBar";
 
 const Step2 = ({ formState, updateFormState }) => {
   const navigate = useNavigate();
 
   const laptopBudgetOptions = [
-    { label: "Quite Low", value: 1725 },
-    { label: "Low", value: 1725 },
-    { label: "Average", value: 1725 },
-    { label: "Above Average", value: 1725 },
-    { label: "Expensive", value: 1725 },
-    { label: "Premium", value: 1725 },
+    { label: "Quite Low", value: "0-999"},
+    { label: "Low", value: "1000-1125"},
+    { label: "Average", value: "1125-1250"},
+    { label: "Above Average", value: "1251-1725"},
+    { label: "Expensive", value: "1725-1825"},
+    { label: "Premium", value: "1825-10000"},
   ];
-
-  // const laptopBudgetOptions = [
-  //   "$1725",
-  //   "Low",
-  //   "Average",
-  //   "Above Average",
-  //   "Expensive",
-  //   "Premium",
-  // ];
 
   const laptopFeatureOptions = [
     "HD",
@@ -92,18 +84,17 @@ const Step2 = ({ formState, updateFormState }) => {
                 <span className="filter-category-title">
                   What is your budget?
                 </span>
+                {/* <Slider /> */}
                 <div className="form-check mt-3">
-                  {laptopBudgetOptions.map((option) => (
-                    <div key={option.value}>
-                      <Field
-                        type="checkbox"
-                        name="laptopBudget" // Updated name attribute
-                        value={option.label}
+                  {laptopBudgetOptions.map((option, index) => (
+                    <div key={index}>
+                    <Field
+                        type="radio"
+                        name="price"
+                        value={option.value}
                         className="form-check-input"
                       />
-                      <label className="form-check-label mb-3">
-                        {option.label}
-                      </label>
+                      <label className="form-check-label mb-3">{option.label}</label>
                     </div>
                   ))}
                 </div>
