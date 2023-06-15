@@ -84,7 +84,7 @@ function Laptop(props) {
           </div>
           <div className="col-md-3 d-flex align-items-center justify-content-center">
             <div className="text-center">
-              <h6 className="text-muted">{laptop.price}</h6>
+              <h6 className="text-muted"> ${laptop.price}</h6>
               <Button variant="warning" className="mt-2">
                 <FontAwesomeIcon icon={faShoppingCart} className="me-1" />
                 Add to Cart

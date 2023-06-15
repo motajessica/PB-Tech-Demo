@@ -1,6 +1,6 @@
 import React from "react";
 import LaptopResults from './LaptopResults';
-import Sidebar from "./SideBar";
+import Sidebar from "./layout/SideBar";
 import {Breadcrumb, BreadcrumbItem} from "react-bootstrap";
 
 function BusinessLaptops() { //LaptopResultsByType

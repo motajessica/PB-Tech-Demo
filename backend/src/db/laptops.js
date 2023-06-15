@@ -10,7 +10,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Integrated Graphics",
     opSystem: "Windows 10 Pro",
-    price: "$1725",
+    price: 1725,
     brand: "HP",    
     laptopType: "business",
     purposes: ["Home use", "School work"]
@@ -26,7 +26,7 @@ const laptops = [
     hddCapacity: "1TB",
     gpuModel: "NVIDIA GeForce MX150",
     opSystem: "Windows 11 Pro",
-    price: "$977.50",
+    price: 977.50,
     brand: "Lenovo",
     laptopType: "chromebook",
     purposes: ["Gaming use"]
@@ -40,9 +40,9 @@ const laptops = [
     screenReso: "2560x1600",
     ssdCapacity: "512GB",
     hddCapacity: "N/A",
-    gpuModel: "Apple M1",
+    gpuModel: "Integrated Graphics",
     opSystem: "macOS",
-    price: "$1399",
+    price: 1399,
     brand: "MacBook",
     laptopType: "2_in_1",
     purposes: ["Home use"]
@@ -59,7 +59,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Integrated Graphics",
     opSystem: "Windows 11 Pro",
-    price: "$1476",
+    price: 1476,
     brand: "Lenovo",
     laptopType: "business",
     purposes: ["Programming"]
@@ -75,7 +75,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Intel Iris Xe Graphics",
     opSystem: "Windows 10 Home",
-    price: "$1799",
+    price: 1799,
     brand: "Dell",
     laptopType: "business",
     purposes: ["Heavy Work"]
@@ -91,7 +91,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1299",
+    price: 1299,
     brand: "MacBook",
     laptopType: "chromebook",
     purposes: ["Office work"]
@@ -107,7 +107,7 @@ const laptops = [
     hddCapacity: "1TB",
     gpuModel: "NVIDIA GeForce GTX 1650",
     opSystem: "Windows 10 Home",
-    price: "$999",
+    price: 999,
     brand: "HP",
     laptopType: "business",
     purposes: ["Home use"]
@@ -123,7 +123,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Intel Iris Xe Graphics",
     opSystem: "Windows 10 Pro",
-    price: "$1999",
+    price: 1999,
     brand: "Lenovo",
     laptopType: "business",
     purposes: ["General use"]
@@ -139,7 +139,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "AMD Radeon RX Vega 10",
     opSystem: "Windows 10 Home",
-    price: "$1199",
+    price: 1199,
     brand: "Dell",
     laptopType: "business",
     purposes: ["School use"]
@@ -155,7 +155,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1499",
+    price: 1499,
     brand: "MacBook",
     laptopType: "2_in_1",
     purposes: ["Home use"]
@@ -172,7 +172,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Intel Iris Xe Graphics",
     opSystem: "Windows 10 Home",
-    price: "$1699",
+    price: 1699,
     brand: "HP",
     laptopType: "2_in_1",
     purposes: ["Programming"]
@@ -189,7 +189,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Intel Iris Plus Graphics",
     opSystem: "Windows 10 Home",
-    price: "$1499",
+    price: 1499,
     brand: "Lenovo",
     laptopType: "business",
     purposes: ["General use", "Office work"]
@@ -206,7 +206,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Intel UHD Graphics",
     opSystem: "Windows 10 Pro",
-    price: "$1299",
+    price: 1299,
     brand: "Dell",
     laptopType: "2_in_1",
     purposes: ["Gamming"]
@@ -223,7 +223,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "AMD Radeon Pro 5500M",
     opSystem: "macOS",
-    price: "$2399",
+    price: 2399,
     brand: "MacBook",
     laptopType: "business",
     purposes: ["Gamming"]
@@ -239,7 +239,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Intel Iris Xe Graphics",
     opSystem: "Windows 10 Home",
-    price: "$1099",
+    price: 1099,
     brand: "HP",
     laptopType: "2_in_1",
     purposes: ["Gamming"]
@@ -255,7 +255,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Integrated Graphics",
     opSystem: "Windows 10 Home",
-    price: "$799",
+    price: 799,
     brand: "Lenovo",
     laptopType: "business",
     purposes: ["Office work"]
@@ -271,7 +271,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "NVIDIA GeForce GTX 1650 Ti",
     opSystem: "Windows 10 Home",
-    price: "$2799",
+    price: 2799,
     brand: "Dell",
     laptopType: "chromebook",
     purposes: ["Office work"]
@@ -287,7 +287,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1799",
+    price: 1799,
     brand: "MacBook",
     laptopType: "business",
     purposes: ["Office work"]
@@ -303,7 +303,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "NVIDIA GeForce GTX 1660 Ti",
     opSystem: "Windows 10 Home",
-    price: "$1599",
+    price: 1599,
     brand: "HP",
     laptopType: "2_in_1",
     purposes: ["Heavy Work"]
@@ -319,7 +319,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "NVIDIA GeForce RTX 3060",
     opSystem: "Windows 10 Home",
-    price: "$1799",
+    price: 1799,
     brand: "Lenovo",
     laptopType: "business",
     purposes: ["Heavy Work"]
@@ -336,7 +336,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1299",
+    price: 1299,
     brand: "MacBook",
     laptopType: "chromebook",
     purposes: ["Office work"]
@@ -352,7 +352,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "NVIDIA GeForce GTX 1660 Ti",
     opSystem: "Windows 10 Home",
-    price: "$1599",
+    price: 1599,
     brand: "HP",
     laptopType: "2_in_1",
     purposes: ["Heavy Work"]
@@ -368,7 +368,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "AMD Radeon RX Vega 10",
     opSystem: "Windows 10 Home",
-    price: "$1199",
+    price: 1199,
     brand: "Dell",
     laptopType: "business",
     purposes: ["School use"]
@@ -384,7 +384,40 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1499",
+    price: 1499,
+    brand: "MacBook",
+    laptopType: "2_in_1",
+    purposes: ["Home use"]
+
+  },
+  {
+    name: "Dell Inspiron 15",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
+    cpuFamily: "AMD Ryzen 9",
+    memorySize: "16GB",
+    screenSize: "16 inches",
+    screenReso: "1920x1080",
+    ssdCapacity: "512GB",
+    hddCapacity: "N/A",
+    gpuModel: "AMD Radeon RX Vega 10",
+    opSystem: "Windows 10 Home",
+    price: 1199,
+    brand: "Dell",
+    laptopType: "business",
+    purposes: ["School use"]
+  },
+  {
+    name: "MacBook Air",
+    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
+    cpuFamily: "Apple M1",
+    memorySize: "8GB",
+    screenSize: "13 inches",
+    screenReso: "2560x1600",
+    ssdCapacity: "512GB",
+    hddCapacity: "N/A",
+    gpuModel: "Apple M1",
+    opSystem: "macOS",
+    price: 1499,
     brand: "MacBook",
     laptopType: "2_in_1",
     purposes: ["Home use"]
@@ -401,7 +434,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "AMD Radeon RX Vega 10",
     opSystem: "Windows 10 Home",
-    price: "$1199",
+    price: 1199,
     brand: "Dell",
     laptopType: "business",
     purposes: ["School use"]
@@ -417,40 +450,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1499",
-    brand: "MacBook",
-    laptopType: "2_in_1",
-    purposes: ["Home use"]
-
-  },
-  {
-    name: "Dell Inspiron 15",
-    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
-    cpuFamily: "AMD Ryzen 7",
-    memorySize: "16GB",
-    screenSize: "16 inches",
-    screenReso: "1920x1080",
-    ssdCapacity: "512GB",
-    hddCapacity: "N/A",
-    gpuModel: "AMD Radeon RX Vega 10",
-    opSystem: "Windows 10 Home",
-    price: "$1199",
-    brand: "Dell",
-    laptopType: "business",
-    purposes: ["School use"]
-  },
-  {
-    name: "MacBook Air",
-    image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
-    cpuFamily: "Apple M1",
-    memorySize: "8GB",
-    screenSize: "13 inches",
-    screenReso: "2560x1600",
-    ssdCapacity: "512GB",
-    hddCapacity: "N/A",
-    gpuModel: "Apple M1",
-    opSystem: "macOS",
-    price: "$1499",
+    price: 1499,
     brand: "MacBook",
     laptopType: "2_in_1",
     purposes: ["Home use"]
@@ -467,7 +467,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1299",
+    price: 1299,
     brand: "MacBook",
     laptopType: "chromebook",
     purposes: ["Office work"]
@@ -475,7 +475,7 @@ const laptops = [
   {
     name: "MacBook Air",
     image:"https://www.pbtech.co.nz/imgprod/N/B/NBKHNB450906__1.jpg?h=3346252898",
-    cpuFamily: "Apple M1",
+    cpuFamily: "Apple M1 Pro",
     memorySize: "8GB",
     screenSize: "13 inches",
     screenReso: "2560x1600",
@@ -483,7 +483,7 @@ const laptops = [
     hddCapacity: "N/A",
     gpuModel: "Apple M1",
     opSystem: "macOS",
-    price: "$1499",
+    price:  1499,
     brand: "MacBook",
     laptopType: "2_in_1",
     purposes: ["Home use"]

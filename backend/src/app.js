@@ -12,13 +12,19 @@ const app = express();
 app.use(cors());
 
 app.get('/laptops', async (req, res) => {
-  const params = req.query
+  let params = req.query
   for (let param in params) {
     const value = params[param];
     if (value === '' || value === null || (Array.isArray(value) && value.length === 0)) {
       delete params[param];
     }
   }
+
+  if(!!params.price && params.price !== '') {
+    const range = params.price.split("-")
+    params.price = { $gt: range[0], $lte: range[1] }
+  }
+
   try {
     const laptops = await Laptop.find(params);
     res.json(laptops);
