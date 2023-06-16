@@ -118,11 +118,10 @@ const Step1 = ({ formState, updateFormState }) => {
                     ))}
                   </div>
                 </div>
-
-                <div className="d-flex justify-content-end align-items-center">
+                <div className="d-flex justify-content-end align-items-center ">
                   <button
                     type="submit"
-                    className="navigation"
+                    className="navigation border-0"
                   >
                     Next
                     <FontAwesomeIcon className="ms-2" icon={faArrowRight} />

@@ -138,7 +138,7 @@ const Step2 = ({ formState, updateFormState }) => {
               <div className="d-flex justify-content-end align-items-center">
                 <button
                   type="submit"
-                  className="navigation"
+                  className="navigation border-0"
                 >
                   Find your perfect Laptop
                   <FontAwesomeIcon className="ms-3" icon={faArrowRight} />
