@@ -1,0 +1,80 @@
+.filter-container {
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+.filter-container-top{
+    border: 2px solid #abacb1;
+    height: 35px;
+    background-color: #e0e2e7;
+}
+.filter-container-bottom{
+    border: 2px solid #e0e2e7;
+    border-top: none;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.filter-container-bottom2{
+    border: 2px solid #abacb1;
+    border-top: none;
+    padding-bottom: 20px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.filter-container h6 {
+  color: #0c5079;
+  
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.filter-container p {
+  color: #0c5079;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.filter-container a {
+  color: #0c5079;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+
+.filter-container a {
+  color: #0c5079;
+  font-size: 15px;
+  margin-left: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.main-container {
+  display: flex;
+  width: 100%;
+}
+
+.laptop-cards {
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #0d4f77;
+  font-size: 15px;
+}
+.title{
+  margin-left: 50px;
+}

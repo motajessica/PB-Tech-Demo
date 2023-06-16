@@ -99,6 +99,17 @@ function Header() {
             <Nav.Link className="text-white fw-bold" as={Link} to="/deals">
               Tax Free
             </Nav.Link>
+            <NavDropdown title="Laptop finder">
+              <NavDropdown.Item as={Link} to="/all_laptops">
+                All Laptops
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/business_laptops">
+                Business Laptops
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/custom_search/step1">
+                Find your perfect laptop
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
           
         </Navbar.Collapse>
