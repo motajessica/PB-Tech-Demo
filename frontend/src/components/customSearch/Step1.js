@@ -45,7 +45,7 @@ const Step1 = ({ formState, updateFormState }) => {
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops_types">Laptop Types</BreadcrumbItem>
           <BreadcrumbItem href="/custom_search/step1" active>
             Find your Perfect Laptop
           </BreadcrumbItem>
@@ -53,7 +53,7 @@ const Step1 = ({ formState, updateFormState }) => {
         <div className="row">
           <div className="col-12">
             <CustomSearchHeader />
-            <p className="text-muted">
+            <p className="">
               With all different specs and extras added to Laptops, it can get confusing when trying to decide which
               fits you best. Get started by answering the questions below.
             </p>
@@ -85,7 +85,6 @@ const Step1 = ({ formState, updateFormState }) => {
                     ))}
                   </div>
                 </div>
-
                 <div className="form-group mb-3">
                   <label className="filter-category-title">Screen size</label>
                   <div className="form-check mt-3">
@@ -95,7 +94,7 @@ const Step1 = ({ formState, updateFormState }) => {
                           type="checkbox"
                           name="screenSize"
                           value={option}
-                          className="form-check-input"
+                          className="form-check-input checkboxes "
                         />
                         <label className="form-check-label mb-3">{option}</label>
                       </div>
@@ -119,14 +118,13 @@ const Step1 = ({ formState, updateFormState }) => {
                     ))}
                   </div>
                 </div>
-
-                <div className="d-flex justify-content-end align-items-center">
+                <div className="d-flex justify-content-end align-items-center ">
                   <button
                     type="submit"
-                    className="filter-next-back-border px-5 d-flex align-items-center"
+                    className="navigation border-0"
                   >
                     Next
-                    <FontAwesomeIcon className="ms-3" icon={faArrowRight} />
+                    <FontAwesomeIcon className="ms-2" icon={faArrowRight} />
                   </button>
                 </div>
               </Form>

@@ -2,9 +2,10 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import CustomSearchHeader from "./CustomSearchHeader";
+import { Link } from "react-router-dom";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import BreadcrumbItem from "react-bootstrap/BreadcrumbItem";
 import Sidebar from "../layout/SideBar";
@@ -46,7 +47,7 @@ const Step2 = ({ formState, updateFormState }) => {
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops_types">Laptops Types</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops_types">Laptop Types</BreadcrumbItem>
           <BreadcrumbItem href="/custom_search/step1" active>
             Find your Perfect Laptop
           </BreadcrumbItem>
@@ -55,7 +56,15 @@ const Step2 = ({ formState, updateFormState }) => {
           <div className="col-12">
             <CustomSearchHeader />
           </div>
-
+          <div className="d-flex justify-content-start align-items-center">
+              <Link
+                to="/custom_search/step1"
+                className="navigation"
+              >
+                <FontAwesomeIcon className="me-2" icon={faArrowLeft} />
+                Back
+              </Link>
+         </div>
           <Formik
             initialValues={{
               laptopBudget: formState.laptopBudget || [],
@@ -129,7 +138,7 @@ const Step2 = ({ formState, updateFormState }) => {
               <div className="d-flex justify-content-end align-items-center">
                 <button
                   type="submit"
-                  className="filter-next-back-border px-5 d-flex align-items-center"
+                  className="navigation border-0"
                 >
                   Find your perfect Laptop
                   <FontAwesomeIcon className="ms-3" icon={faArrowRight} />
