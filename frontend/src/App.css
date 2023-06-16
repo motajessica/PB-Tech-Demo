@@ -45,9 +45,9 @@
   text-align: left;
 }
 
-.filter-border {
-  color: #f08223;;
-  border-style: solid;
+.cs-header {
+  color: #0c5079;
+  font-weight: 700;
 }
 
 .navigation{
@@ -65,6 +65,7 @@
 .navigation:hover {
   background-color: #dd6808;
   color: white;
+  transform: scale(1.1)
 }
 
 

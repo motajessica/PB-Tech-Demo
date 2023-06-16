@@ -53,7 +53,7 @@ const Step1 = ({ formState, updateFormState }) => {
         <div className="row">
           <div className="col-12">
             <CustomSearchHeader />
-            <p className="text-muted">
+            <p className="">
               With all different specs and extras added to Laptops, it can get confusing when trying to decide which
               fits you best. Get started by answering the questions below.
             </p>
@@ -95,7 +95,7 @@ const Step1 = ({ formState, updateFormState }) => {
                           type="checkbox"
                           name="screenSize"
                           value={option}
-                          className="form-check-input"
+                          className="form-check-input checkboxes "
                         />
                         <label className="form-check-label mb-3">{option}</label>
                       </div>
@@ -126,7 +126,7 @@ const Step1 = ({ formState, updateFormState }) => {
                     className="navigation"
                   >
                     Next
-                    <FontAwesomeIcon className="ms-3" icon={faArrowRight} />
+                    <FontAwesomeIcon className="ms-2" icon={faArrowRight} />
                   </button>
                 </div>
               </Form>
