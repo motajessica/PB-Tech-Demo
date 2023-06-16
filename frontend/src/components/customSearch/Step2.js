@@ -47,7 +47,7 @@ const Step2 = ({ formState, updateFormState }) => {
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops_types">Laptops Types</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops_types">Laptop Types</BreadcrumbItem>
           <BreadcrumbItem href="/custom_search/step1" active>
             Find your Perfect Laptop
           </BreadcrumbItem>
@@ -59,10 +59,10 @@ const Step2 = ({ formState, updateFormState }) => {
           <div className="d-flex justify-content-start align-items-center">
               <Link
                 to="/custom_search/step1"
-                className="filter-next-back-border px-4 d-flex align-items-center"
+                className="navigation"
               >
-                <FontAwesomeIcon className="me-3" icon={faArrowLeft} />
-                Go Back
+                <FontAwesomeIcon className="me-2" icon={faArrowLeft} />
+                Back
               </Link>
          </div>
           <Formik
@@ -138,7 +138,7 @@ const Step2 = ({ formState, updateFormState }) => {
               <div className="d-flex justify-content-end align-items-center">
                 <button
                   type="submit"
-                  className="filter-next-back-border px-5 d-flex align-items-center"
+                  className="navigation"
                 >
                   Find your perfect Laptop
                   <FontAwesomeIcon className="ms-3" icon={faArrowRight} />

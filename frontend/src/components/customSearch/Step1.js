@@ -45,7 +45,7 @@ const Step1 = ({ formState, updateFormState }) => {
         <Breadcrumb>
           <BreadcrumbItem href="/">Home</BreadcrumbItem>
           <BreadcrumbItem href="/">Computers & Tablets</BreadcrumbItem>
-          <BreadcrumbItem href="/laptops">Laptops</BreadcrumbItem>
+          <BreadcrumbItem href="/laptops_types">Laptop Types</BreadcrumbItem>
           <BreadcrumbItem href="/custom_search/step1" active>
             Find your Perfect Laptop
           </BreadcrumbItem>
@@ -123,7 +123,7 @@ const Step1 = ({ formState, updateFormState }) => {
                 <div className="d-flex justify-content-end align-items-center">
                   <button
                     type="submit"
-                    className="filter-next-back-border px-5 d-flex align-items-center"
+                    className="navigation"
                   >
                     Next
                     <FontAwesomeIcon className="ms-3" icon={faArrowRight} />

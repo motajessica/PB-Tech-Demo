@@ -7,13 +7,12 @@
 }
 
 .nav-bar-btn-search {
-  background-color: orange;
+  background-color: #f08223;;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-bar-btn-search:hover {
+  background-color: #dd6808 ;
 }
-
 
 .dropdown-toggle {
   color: white;
@@ -47,34 +46,27 @@
 }
 
 .filter-border {
-  color: orange;
+  color: #f08223;;
   border-style: solid;
 }
 
-.filter-next-back-border{
-  color: orange;
+.navigation{
+  color: white;;
   border-style: solid;
-  font-size: 1.5rem;
-}
-.filter-next-back-border {
+  font-size: 1.2rem;
   display: inline-block;
-  border: 2px solid #0c5079;
-  background-color: transparent;
-  color: #0c5079;
+  background-color: #f08223;;
   padding: 0.5rem 1rem;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.filter-next-back-border:hover {
-  background-color: orange;
+.navigation:hover {
+  background-color: #dd6808;
   color: white;
 }
 
-#FindYourPerfectLaptop{
-  background-color: #EE8022;
-}
 
 #shopAllLaptops{
   background-color: #186696;
