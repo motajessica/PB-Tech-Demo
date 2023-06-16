@@ -1,25 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-
-* {
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --font-roboto: "Roboto Slab", serif;
-  --font-raleway: "Raleway", sans-serif;
-}
-
-body {
-  font-family: var(--font-roboto);
-  background-color: white;
-}
-
 .app {
   padding: 2rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +10,6 @@ body {
 .empty {
   width: 100%;
   margin-top: 3rem;
-
   display: flex;
   justify-content: center;
   align-items: center;

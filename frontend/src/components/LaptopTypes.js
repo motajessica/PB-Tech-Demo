@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LaptopType from "./LaptopType";
-import "../HomepageApp.css";
+import "../css/HomePage.css";
 import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
 
@@ -12,7 +12,7 @@ function LaptopTypes(props) {
     lTitle: "Still not quite sure?",
     lDetail:
       "Try our matchmaking feature! Answer some of our questions and we will recommend a device that fits your needs perfectly!",
-    imageSrc: "./images/question_mark.jpg",
+    imageSrc: "/images/lTypes/question_mark.jpg",
   };
   useEffect(() => {
     const apiUrl = `http://localhost:9000/laptop_types`;

@@ -14,7 +14,7 @@ const LaptopType = ({ laptop }) => {
       <div>
         <img
           className={laptop.id !== 200 ? "lImage" : "QuestionImage"}
-          src={require(`${laptop.imageSrc}`)}
+          src={laptop.imageSrc}
           alt={laptop.lTitle}
         ></img>
       </div>

@@ -85,7 +85,6 @@ const Step1 = ({ formState, updateFormState }) => {
                     ))}
                   </div>
                 </div>
-
                 <div className="form-group mb-3">
                   <label className="filter-category-title">Screen size</label>
                   <div className="form-check mt-3">
